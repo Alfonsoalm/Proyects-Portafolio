@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { experiencias } from '../../data/experiencias';
-import { FaArrowRight } from 'react-icons/fa'; // Importamos el icono de flecha
 
 export const Experiencia = () => {
   const [selectedExperience, setSelectedExperience] = useState(1);
