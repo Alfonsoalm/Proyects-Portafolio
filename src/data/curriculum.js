@@ -3,7 +3,7 @@ export const curriculum = {
     experiencia: [
       {
         id: 1,
-        nombre: 'R&D Engineer - CETEMET',
+        nombre: 'R&D Engineer',
         fecha: 'Septiembre 2022 - Actualidad',
         descripcion: 'Trabajando en el desarrollo de soluciones de I+D en el ámbito de la robótica y sistemas embebidos. Desarrollo de software y hardware para prototipos industriales y comerciales.',
         tecnologias: 'LoRa, ESP32, Arduino, Python, ROS'

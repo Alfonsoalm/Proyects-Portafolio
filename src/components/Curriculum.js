@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faBrain, faGraduationCap, faTrophy, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faBrain, faGraduationCap, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const sections = [

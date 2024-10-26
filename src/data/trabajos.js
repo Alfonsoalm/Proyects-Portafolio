@@ -47,7 +47,7 @@ export const trabajos = [
     {
         'id': 'speaker-matriz-led',
         'nombre':'Gran Altavoz Bluetooth Matriz LED',
-        'url': 'https://www.udemy.com/',
+        'url': 'https://github.com/Alfonsoalm/Altavoz-Con-Analizador-De-Espectro',
         'tecnologias': 'ESP8266, Arduino/C++, Microfono, Modulo Bluetooth',
         'categorias': 'Electronica, Programacion',
         'descripcion':'----'
@@ -55,7 +55,7 @@ export const trabajos = [
     {
         'id': 'mini-speaker-Bluetooth',
         'nombre':'Mini Altavoz Bluetooth Inalambrico',
-        'url': 'https://www.udemy.com/',
+        'url': 'https://github.com/Alfonsoalm/Altavoz-Con-Analizador-De-Espectro',
         'tecnologias': 'Bluetooth, Bateria 12V',
         'categorias': 'Electronica',
         'descripcion':'----'

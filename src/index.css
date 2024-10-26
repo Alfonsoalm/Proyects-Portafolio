@@ -36,6 +36,7 @@ body {
 }
 
 /* HEADER */
+/* Estilos generales */
 .header {
   display: flex;
   justify-content: space-between;
@@ -69,14 +70,65 @@ body {
 
 .header .active,
 .header nav ul li a:hover {
-  color: #71ffde;
-  font-size: 26px;
+  color: #71ffde; /* Color en hover y en estado activo */
+  font-size: 26px; /* Tamaño de fuente al hacer hover */
 }
 
-.header-subtitle {
-  font-size: 20px;
+/* Servicios */
+.services-grid {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
 }
 
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px; /* Altura fija para tarjetas de servicios en pantallas grandes */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .header .logo h3 {
+    font-size: 20px;
+  }
+
+  .header nav ul {
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que el menú ocupe varias líneas si es necesario */
+    justify-content: center;
+  }
+
+  .header nav ul li {
+    margin: 7px;
+    font-size: 18px;
+  }
+
+  .services-grid {
+    flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+  }
+
+  .service-card {
+    max-width: none; /* Permite que las tarjetas se adapten al ancho completo */
+    height: auto; /* Ajusta automáticamente la altura en pantallas pequeñas */
+  }
+}
 /* FOOTER */
 .footer {
   position: relative; /* Asegura que esté en el flujo, pero permite ajustarlo si es necesario */
@@ -407,20 +459,85 @@ section.content {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Aseguramos un diseño centralizado similar al de curriculum */
 .services {
-  margin-left: 10px;
+  text-align: center;
+  padding: 20px;
 }
-.service h2 {
-  color: #000;
+
+.services-grid {
+  display: flex;
+  gap: 30px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  flex-direction: row; /* Cambiamos a columna para alinear verticalmente */
+  align-items: center;
+  justify-content: center;
 }
-.service p {
-  color: #000;
+
+/* Estilo de cada tarjeta en el área de servicios */
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 250px;
 }
+
+.service-card:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Icono de la tarjeta de servicios */
+.service-icon {
+  font-size: 36px;
+  color: #2f2895;
+  margin-bottom: 10px;
+}
+
+/* Título y texto de la tarjeta */
+.service-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2f2895;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botón de cada tarjeta de servicio */
+.service-button {
+  display: inline-block;
+  background-color: #2f2895;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #1f1a65;
+}
+
 
 .curriculum {
   text-align: center;
   padding: 20px;
 }
+
 .curriculum-grid {
   display: flex;
   gap: 30px; /* Espacio entre las tarjetas */
@@ -502,14 +619,142 @@ section.content {
     min-width: 100%;
   }
 }
+hr {
+  margin-bottom: 20px;
+}
 
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  height: 3px;
+  background-color: #e0e0e0;
+  z-index: 1;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  z-index: 2;
+}
+
+.timeline-point {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f4f8;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.timeline-point.active {
+  background-color: #2f2895;
+  border-color: #2f2895;
+}
+
+.timeline-point:hover {
+  background-color: #1f1a65;
+  border-color: #1f1a65;
+}
+
+.period-label {
+  position: absolute;
+  top: 30px; 
+  left: -60px;
+  font-size: 14px;
+  color: white;
+  background-color: #2f2895;
+  border-radius: 6px;
+  padding: 7px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.experience-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.experience-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.experience-card h3 {
+  color: #2f2895;
+  margin-bottom: 5px;
+}
+
+.experience-card h4 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.experience-location,
+.experience-duration,
+.experience-description {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.icon-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Icono de instrucción en dispositivos móviles */
+.keyboard-instruction {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.keyboard-instruction::after {
+  content: " ➡️"; /* Icono de flecha en lugar de texto */
+  margin-right: 5px;
+  font-size: 18px;
+}
 /* CONTACT FORM */
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px; /* Ajustamos el ancho máximo */
+  max-width: 400px; /* Ajustamos el ancho máximo */
+  max-height: 400px;
   margin: 20px auto;
   padding: 30px; /* Aumentamos el padding */
   border-radius: 10px;
