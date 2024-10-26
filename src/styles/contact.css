@@ -7,18 +7,27 @@
   max-width: 400px; /* Ajustamos el ancho máximo */
   max-height: 400px;
   margin: 20px auto;
-  padding: 30px; /* Aumentamos el padding */
+  padding: 50px; /* Aumentamos el padding */
   border-radius: 10px;
   background-color: #f4f4f4;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 18px; /* Aumentamos el tamaño de la fuente */
 }
 
-.contact input[type="text"],
+.contact input[type="text"]{
+  width: 100%;
+  padding: 10px; /* Aumentamos el tamaño del padding */
+  margin: 8px 0;
+  font-size: 20px; /* Tamaño del texto más grande */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .contact textarea {
   width: 100%;
-  padding: 20px; /* Aumentamos el tamaño del padding */
-  margin: 15px 0;
+  padding: 30px; /* Aumentamos el tamaño del padding */
+  margin: 8px 0;
   font-size: 20px; /* Tamaño del texto más grande */
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -27,7 +36,9 @@
 
 .contact input[type="submit"] {
   cursor: pointer;
-  padding: 15px 30px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 22px; /* Aumentamos el tamaño del texto */
   border: none;
   border-radius: 5px;
