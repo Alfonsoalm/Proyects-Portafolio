@@ -1,23 +1,23 @@
 export const experiencias = [
     {
       id: 4,
-      title: 'Alumno Colaborador',
-      company: 'Universidad de Córdoba',
+      title: 'Student Collaborator of the Department of Automation',
+      company: 'Cordoba University',
       period: 'sept. 2019 - jun. 2021',
       icon: '/images/companies/logo_uco.png',
-      location: 'Córdoba, Andalucía, España',
-      description: 'Proyectos de programación de PLC en Laboratorio de Automática de la UCO.',
+      location: 'Córdoba, Spain',
+      description: 'PLC programming projects in the UCO Automation Laboratory',
       startDate: new Date(2019, 8), // Septiembre 2019
       endDate: new Date(2021, 5), // Junio 2021
     },
     {
       id: 3,
-      title: 'Becario de investigación',
-      company: 'Universidad de Córdoba',
+      title: 'Student with research grant',
+      company: 'Cordoba University',
       period: 'ene. 2022 - mar. 2023',
       icon: '/images/companies/logo_uco.png',
-      location: 'Córdoba, Andalucía, España',
-      description: 'Colaboración en el Departamento de I. Eléctrica y Automática, proyectos en el laboratorio.',
+      location: 'Córdoba, Spain',
+      description: 'Collaboration in the Department of Electrical and Automatic Engineering, projects in the laboratory',
       startDate: new Date(2022, 0), // Enero 2022
       endDate: new Date(2023, 2), // Marzo 2023
     },
@@ -27,19 +27,19 @@ export const experiencias = [
       company: 'Deuser',
       period: 'mar. 2023 - sept. 2023',
       icon: '/images/companies/logo_deuser.png',
-      location: 'Córdoba y alrededores, España',
-      description: 'Desarrollo de software de Vision artificial en C++ y Python',
+      location: 'Córdoba, Spain',
+      description: 'Machine Vision Software Development in C++ and Python',
       startDate: new Date(2023, 2), // Marzo 2023
       endDate: new Date(2023, 8), // Septiembre 2023
     },
     {
       id: 1,
       title: 'R&D Engineer',
-      company: 'FUNDACION CETEMET',
+      company: 'Fundacion CETEMET',
       period: 'dic. 2023 - actualidad',
       icon: '/images/companies/logo_cetemet.png',
-      location: 'Córdoba, Andalucía, España',
-      description: 'Desarrollo de soluciones de I+D en robótica ROS, sistemas embebidos y plataformas IoT',
+      location: 'Córdoba, Spain',
+      description: 'Development of R&D solutions in ROS robotics, embedded systems and IoT platforms',
       startDate: new Date(2023, 11), // Diciembre 2023
       endDate: null, // Actualidad
     },

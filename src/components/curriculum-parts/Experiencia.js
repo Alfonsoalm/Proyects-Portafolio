@@ -34,11 +34,11 @@ export const Experiencia = () => {
 
   return (
     <div className="page">
-      <h1 className="heading">Experiencia</h1>
+      <h1 className="heading">Experience</h1>
       <hr />
 
       <p className="keyboard-instruction">
-        Usa la tecla derecha, Enter o Espacio para avanzar entre periodos.
+        Use right arrow to advance between periods
       </p>
 
       <div
@@ -79,7 +79,7 @@ export const Experiencia = () => {
               <h3>{exp.title}</h3>
               <h4>{exp.company}</h4>
               <p className="experience-location">{exp.location}</p>
-              <p className="experience-duration">Duración: {calculateDuration(exp.startDate, exp.endDate)}</p>
+              <p className="experience-duration">Duration: {calculateDuration(exp.startDate, exp.endDate)}</p>
               <p className="experience-description">{exp.description}</p>
             </div>
           ))}

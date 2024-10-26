@@ -11,6 +11,11 @@ import './styles/projectView.css';
 import './styles/proyect.css';
 import './styles/services.css';
 import './styles/experience.css';
+import './styles/socialNetwork.css';
+import './styles/education.css';
+import './styles/skillList.css';
+import './styles/recognitions.css';
+import './styles/courses.css';
 
 import App from './App';
 

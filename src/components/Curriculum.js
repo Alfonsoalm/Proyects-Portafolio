@@ -1,14 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faBrain, faGraduationCap, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-
-const sections = [
-  { title: 'Experiencia', description: 'Haz clic para ver más detalles sobre experiencia', icon: faBriefcase, link: '/curriculum/experiencia' },
-  { title: 'Conocimientos', description: 'Haz clic para ver más detalles sobre conocimientos', icon: faBrain, link: '/curriculum/conocimientos' },
-  { title: 'Educacion', description: 'Haz clic para ver más detalles sobre educación', icon: faGraduationCap, link: '/curriculum/educacion' },
-  { title: 'Reconocimientos', description: 'Haz clic para ver más detalles sobre reconocimientos', icon: faTrophy, link: '/curriculum/reconocimientos' },
-];
+import { sections } from '../data/secciones';
 
 export const Curriculum = () => {
   return (

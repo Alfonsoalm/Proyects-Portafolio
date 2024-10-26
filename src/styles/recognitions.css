@@ -1,0 +1,37 @@
+.recognitions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recognition-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .award-icon {
+    color: #ffbf00; /* Oro */
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .recognition-card h3 {
+    font-size: 20px;
+    color: #2f2895;
+    margin-bottom: 10px;
+  }
+  
+  .recognition-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 5px 0;
+  }

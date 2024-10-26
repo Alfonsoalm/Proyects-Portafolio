@@ -1,0 +1,123 @@
+.education-container {
+    color: #000;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.education-item {
+    width: 400px;
+    height: 400px; /* Aumenta un poco la altura para centrar mejor el contenido */
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Necesario para el giro 3D */
+}
+
+.education-item .front,
+.education-item .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Aumenta el padding para mejorar la separación */
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s;
+}
+
+.education-item.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.education-item.flipped .back {
+    transform: rotateY(0deg);
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.institution-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.toggle-button {
+    background-color: #2f2895;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #1e1a6d;
+}
+
+.stars {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 16px;
+    color: #ffbf00;
+    margin-left: 3px;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.skill-item {
+    margin: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.view-courses-button {
+    background-color: #2f2895;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.view-courses-button:hover {
+    background-color: #1e1a6d;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.view-courses-button:active {
+    transform: scale(0.95);
+}
