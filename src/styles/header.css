@@ -1,0 +1,87 @@
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1f1a65;
+  color: white;
+  border-radius: 10px;
+}
+
+.header .logo h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.header nav ul li {
+  font-size: 23px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header .active,
+.header nav ul li a:hover {
+  color: #71ffde;
+  font-size: 26px;
+}
+
+/* Media query para dispositivos móviles (formato columna) */
+@media (max-width: 799px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+  }
+
+  .header .logo {
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .header nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+  }
+
+  .header nav ul li {
+      margin: 4px 0;
+      font-size: 23px;
+  }
+
+  .header .logo h3 {
+      font-size: 20px;
+  }
+}
+
+/* Media query para tablets (menú en formato horizontal) */
+@media (min-width: 800px) and (max-width: 1024px) {
+  .header {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .header nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+  }
+
+  .header nav ul li {
+      font-size: 23px;
+  }
+}

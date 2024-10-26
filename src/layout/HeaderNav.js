@@ -7,7 +7,7 @@ export const HeaderNav = () => {
         <div className='logo'>
             <h3>Alfonso Almenara
             </h3> 
-            <p className='header-subtitle'>R & D Engineer | Cetemet at the moment
+            <p className='header-subtitle'>R & D Engineer | Cetemet
             </p>
         </div>
         

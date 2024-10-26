@@ -1,0 +1,128 @@
+hr {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    height: 3px;
+    background-color: #e0e0e0;
+    z-index: 1;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .timeline-point {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #f2f4f8;
+    border: 3px solid #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .timeline-point.active {
+    background-color: #2f2895;
+    border-color: #2f2895;
+  }
+  
+  .timeline-point:hover {
+    background-color: #1f1a65;
+    border-color: #1f1a65;
+  }
+  
+  .period-label {
+    position: absolute;
+    top: 30px; 
+    left: -60px;
+    font-size: 14px;
+    color: white;
+    background-color: #2f2895;
+    border-radius: 6px;
+    padding: 7px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  .experience-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .experience-card h3 {
+    color: #2f2895;
+    margin-bottom: 5px;
+  }
+  
+  .experience-card h4 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .experience-location,
+  .experience-duration,
+  .experience-description {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .icon-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .experience-icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Icono de instrucción en dispositivos móviles */
+  .keyboard-instruction {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  
+  .keyboard-instruction::after {
+    content: " ➡️"; /* Icono de flecha en lugar de texto */
+    margin-right: 5px;
+    font-size: 18px;
+  }

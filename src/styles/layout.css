@@ -1,0 +1,63 @@
+
+/* Asegura que html y body ocupen toda la altura */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+}
+
+/* Asegura que #root ocupe toda la altura */
+#root {
+  background-image: url("C:/Users/ant45/OneDrive/Escritorio/CURSOS/REACT/08-proyecto2-porfolio/public/images/background-image.jpg");
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-position: center;
+  background-repeat: repeat; /* Repite la imagen para cubrir el área */
+  color: #ffffff;
+  min-height: 100vh; /* Cambiamos a min-height para asegurar que ocupe todo el alto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centramos horizontalmente el contenido de root */
+}
+
+.layout {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo sólido con opacidad */
+  flex: 1;
+  width: 100%; /* Asegura que el layout ocupe todo el ancho de root */
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-radius: 10px; /* Redondea el layout para un efecto de tarjeta */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centra el layout en root */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que crezca ocupando todo el espacio vertical */
+  padding: 0; /* Aseguramos que no tenga padding innecesario */
+  margin: 0; /* Eliminamos márgenes para asegurar el ajuste */
+  height: 100%; /* Garantiza que ocupe todo el alto disponible */
+}
+
+/* PAGES */
+.page {
+  padding: 10px; /* Eliminamos cualquier padding innecesario */
+  margin: 0; /* Eliminamos cualquier margen que pudiera estar empujando hacia abajo */
+  flex-grow: 1; /* Esto asegura que crezca ocupando todo el espacio disponible */
+  min-height: 100%; /* Asegura que ocupe todo el alto disponible en el content */
+}
+
+
+.page .heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f1a65;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
