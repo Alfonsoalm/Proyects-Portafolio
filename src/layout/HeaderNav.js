@@ -6,19 +6,18 @@ export const HeaderNav = () => {
     <header className='header'>
         <div className='logo'>
             <h3>Alfonso Almenara
-            </h3>
-            <h3>I+D+i Engineer
-            </h3>
-            
+            </h3> 
+            <p className='header-subtitle'>R & D Engineer | Cetemet at the moment
+            </p>
         </div>
         
         <nav className="nav">
             <ul>
-                <li><NavLink to="/inicio" className={({isActive}) => isActive ? "active" :""}>Inicio</NavLink></li>
-                <li><NavLink to="/portafolio" className={({isActive}) => isActive ? "active" :""}>Portafolio</NavLink></li>
-                <li><NavLink to="/servicios" className={({isActive}) => isActive ? "active" :""}>Servicios</NavLink></li>
+                <li><NavLink to="/inicio" className={({isActive}) => isActive ? "active" :""}>Home</NavLink></li>
+                <li><NavLink to="/portafolio" className={({isActive}) => isActive ? "active" :""}>Portfolio</NavLink></li>
+                <li><NavLink to="/servicios" className={({isActive}) => isActive ? "active" :""}>Services</NavLink></li>
                 <li><NavLink to="/curriculum" className={({isActive}) => isActive ? "active" :""}>Curriculum</NavLink></li>
-                <li><NavLink to="/contacto" className={({isActive}) => isActive ? "active" :""}>Contacto</NavLink></li>
+                <li><NavLink to="/contacto" className={({isActive}) => isActive ? "active" :""}>Contact</NavLink></li>
             </ul>
         </nav>
 

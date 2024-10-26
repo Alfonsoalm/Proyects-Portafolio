@@ -1,38 +1,50 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { ListadoTrabajos } from './ListadoTrabajos'
+import React from "react";
+import { Link } from "react-router-dom";
+import { icons } from '../data/icons';
+import { ListadoTrabajos } from "./ListadoTrabajos";
 
 export const Inicio = () => {
   return (
-    <div className='home'>
-        <h3 className='heading'>
-            Hola, soy Alfonso Almenara, un humilde <strong>Ingeniero Electronico. </strong>
-            Tengo conocimientos en:
-            <ul>
-              <li>Lenguajes programacion: <strong>Python, JavaScript, C++, C</strong></li>
-              <li>Robotica y sensorica: <strong>ROS</strong></li>
-              <li>Placas de desarrollo IOT: <strong>Esp32, Arduino, Raspberry</strong></li>
-              <li>Diseño e Impresion 3D: <strong>Cura, Solidworks</strong></li>
-              <li>Prototipado de placas: <strong>EasyEDA, KiCAD</strong></li>
-              <li>Herramientas de trabajo grupal: <strong>Github, Notion</strong></li>
-              <li>Dominio otros softwares: <strong>Excel, Power Point, Word</strong></li>
-            </ul>
-        </h3>
+    <div className="page">
+      <h1 className='heading'>Home </h1>
+      <p className="heading-explain">Some technologies I worked with</p>
+      <hr />
 
-        <hr/>
+      <section className='tech-grid'>
+      {
+        icons.map(icon => {
+          return (
+            <div key={icon.nombre} className='tech-item'>
+              <Link to={`/project/${icon.nombre}`} className='tech-item-a'>
+                <div>
+                  <img src={"/images/icons/"+icon.imagen} alt={icon.nombre} />  
+                </div>
+                <div>
+                  <p>{icon.nombre}</p>  
+                </div>
+              </Link>
+            </div>
+          );
+        })
+      }
+      </section>
 
-        <h2 className='title'>
-            Dejame guiarte a traves de los proyectos que he desarrollado
-        </h2>
+      <hr />
+      <p className="guide-explain">
+        Let me guide you through my project portfolio and my professional experience in engineering.
+      </p>
 
-        <div className='div_link'>
-          <Link className="link" to="/contacto"> Contacta conmigo</Link>
-        </div>
+      <div className="div_link">
+        <Link className="link" to="/contacto">
+          Contact me
+        </Link>
+      </div>
+      <br/>
 
-        <section className='lasts-works'>
-            <h2 className='heading'>Proyectos desarrollados</h2>
-            <ListadoTrabajos limite="2" /> 
-        </section>
+      <section className="lasts-works">
+        <h2 className="heading">Some proyects developed</h2>
+        <ListadoTrabajos limite="2" />
+      </section>
     </div>
-  )
-}
+  );
+};

@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer className='footer'>
-        Portafolio Ing. Alfonso Almenara &copy; Proyecto independiente - 2024
+        Portfolio Eng. Alfonso Almenara &copy; Independient Project - 2024
     </footer>
   )
 }

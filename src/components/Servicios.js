@@ -1,28 +1,35 @@
-import React from 'react'
+import React from "react";
 
 export const Servicios = () => {
   return (
-    <div className='page'>
-        <h1 className='heading'>Servicios</h1>
+    <div className="page">
+      <h1 className="heading">Services</h1>
+      <hr />
+      <section className="services">
+        <article className="service">
+          <h2>Software Development Projects</h2>
+          <p>
+            I efficiently contribute to software development in a collaborative
+            team environment.
+          </p>
+        </article>
 
-        <section className='services'>
+        <article className="service">
+          <h2>Hardware Development</h2>
+          <p>
+            I design and prototype development boards tailored for testing and
+            evaluation.
+          </p>
+        </article>
 
-            <article className='service'>
-                <h2>Desarrollo software de web</h2>
-                <p>Creo tu plataforma web desde cero</p>
-            </article>
-
-            <article className='service'>
-                <h2>Desarrollo de placas de prototipado</h2>
-                <p>Diseño placas de desarrollo para pruebas</p>
-            </article>
-
-            <article className='service'>
-                <h2>Gestion de proyectos</h2>
-                <p>Coordinacion de proyectos industriales software y hardware</p>
-            </article>
-
-        </section>
+        <article className="service">
+          <h2>Project Management</h2>
+          <p>
+            Coordination and management of commercial software and hardware
+            projects.
+          </p>
+        </article>
+      </section>
     </div>
-  )
-}
+  );
+};
