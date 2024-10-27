@@ -17,6 +17,16 @@ export const Reconocimientos = () => {
             <p><strong>Institution:</strong> {recognition.institution}</p>
             <p><strong>Date:</strong> {recognition.date}</p>
             <p>{recognition.description}</p>
+            {recognition.link && (
+              <a 
+                href={recognition.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="recognition-link"
+              >
+                View on LinkedIn
+              </a>
+            )}
           </div>
         ))}
       </div>

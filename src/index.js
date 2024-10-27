@@ -16,6 +16,7 @@ import './styles/education.css';
 import './styles/skillList.css';
 import './styles/recognitions.css';
 import './styles/courses.css';
+import './styles/knowledge.css';
 
 import App from './App';
 

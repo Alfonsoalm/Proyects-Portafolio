@@ -1,7 +1,7 @@
 .education-container {
     color: #000;
     display: flex;
-    gap: 40px;
+    gap: 70px;
     justify-content: center;
     align-items: center; /* Centra verticalmente los elementos */
     flex-wrap: wrap;
@@ -51,6 +51,11 @@
     transform: rotateY(180deg);
 }
 
+.back h4{
+    margin: 0px;
+    padding: 0px;
+}
+
 .institution-logo {
     width: 50px;
     margin-bottom: 10px;
@@ -83,6 +88,22 @@
     margin-left: 3px;
 }
 
+.star.full {
+    color: #ffbf00; /* Estrella completa en amarillo */
+}
+
+.star.half {
+    color: #ffbf00;
+}
+
+.star.quarter {
+    color: #ffbf00;
+}
+
+.star.empty {
+    color: #cccccc; /* Estrella vacía en gris */
+}
+
 .skills {
     list-style-type: none;
     padding: 0;
@@ -97,16 +118,18 @@
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .view-courses-button {
     background-color: #2f2895;
+    text-decoration: none;
+    margin-top: 20px;
     color: #ffffff;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;

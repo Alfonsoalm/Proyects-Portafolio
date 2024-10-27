@@ -4,7 +4,7 @@ export const education = [
         degree: "Master's in Industrial Engineering",
         startDate: "Oct. 2021",
         endDate: "Jun. 2023",
-        grade: 8.7,
+        grade: 8.8,
         skills: [
           "Structural Engineering",
           "Industrial Electronics",

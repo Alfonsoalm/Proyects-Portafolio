@@ -1,5 +1,87 @@
+/* src/styles/Courses.css */
 
-
-.courses-container{
-    color: black;
-}
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .course-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #2f2895;
+  }
+  
+  .course-card p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .credential-link {
+    color: #1e1a6d;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+  
+  .skills-section {
+    margin-top: 10px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .skill-item {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f2895;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button.active {
+    background-color: #1e1a6d;
+  }
+  
+  .pagination-button:hover:not(.active) {
+    background-color: #463f9e;
+  }
+  
