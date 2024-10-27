@@ -14,6 +14,7 @@
   font-size: 18px; /* Aumentamos el tamaño de la fuente */
 }
 
+.contact input[type="email"],
 .contact input[type="text"]{
   width: 100%;
   padding: 10px; /* Aumentamos el tamaño del padding */
