@@ -1,17 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { experiencias } from '../../data/experiencias';
 
 export const Experiencia = () => {
-  const [selectedExperience, setSelectedExperience] = useState(1);
-  const [showPeriod, setShowPeriod] = useState(1); 
+  const [selectedExperience, setSelectedExperience] = useState(experiencias[0].id);
+  const [showPeriod, setShowPeriod] = useState(experiencias[0].id);
+  const intervalRef = useRef(null);
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      const currentIndex = experiencias.findIndex(exp => exp.id === selectedExperience);
+      const nextIndex = (currentIndex + 1) % experiencias.length;
+      setSelectedExperience(experiencias[nextIndex].id);
+      setShowPeriod(experiencias[nextIndex].id);
+    }, 6000); // Cambia cada 7 segundos
+
+    return () => clearInterval(intervalRef.current); // Limpia el intervalo al desmontar el componente
+  }, [selectedExperience]);
 
   const handlePeriodClick = (id) => {
+    clearInterval(intervalRef.current); // Usa la ref para limpiar el intervalo
     setSelectedExperience(id);
-    setShowPeriod(id); 
+    setShowPeriod(id);
   };
 
   const handleKeyDown = (e) => {
-    const currentIndex = experiencias.findIndex((exp) => exp.id === selectedExperience);
+    const currentIndex = experiencias.findIndex(exp => exp.id === selectedExperience);
     if ((e.key === 'ArrowRight' || e.key === 'Enter' || e.key === ' ') && currentIndex < experiencias.length - 1) {
       const newIndex = experiencias[currentIndex + 1].id;
       setSelectedExperience(newIndex);
@@ -23,29 +36,15 @@ export const Experiencia = () => {
     }
   };
 
-  const calculateDuration = (start, end) => {
-    if (!start) return '';
-    const now = end || new Date();
-    const months = (now.getFullYear() - start.getFullYear()) * 12 + now.getMonth() - start.getMonth();
-    const years = Math.floor(months / 12);
-    const remainingMonths = months % 12;
-    return `${years > 0 ? `${years} año${years > 1 ? 's' : ''} ` : ''}${remainingMonths > 0 ? `${remainingMonths} mes${remainingMonths > 1 ? 'es' : ''}` : ''}`;
-  };
-
   return (
     <div className="page">
       <h1 className="heading">Experience</h1>
       <hr />
 
-      <p className="keyboard-instruction">
-        Use right arrow to advance between periods
-      </p>
-
       <div
         className="timeline-container"
         tabIndex="0"
         onKeyDown={handleKeyDown}
-        role="listbox"
         aria-label="Timeline navigation"
       >
         <div className="timeline-line"></div>
@@ -53,14 +52,11 @@ export const Experiencia = () => {
           {experiencias.map((exp) => (
             <button
               key={exp.id}
-              id={`timeline-point-${exp.id}`}
               className={`timeline-point ${selectedExperience === exp.id ? 'active' : ''}`}
               onClick={() => handlePeriodClick(exp.id)}
               onMouseEnter={() => setShowPeriod(exp.id)}
-              onMouseLeave={() => setShowPeriod(showPeriod)}
+              onMouseLeave={() => setShowPeriod(selectedExperience)}
               title={exp.period}
-              role="option"
-              aria-selected={selectedExperience === exp.id}
             >
               {showPeriod === exp.id && <span className="period-label">{exp.period}</span>}
             </button>
@@ -74,12 +70,11 @@ export const Experiencia = () => {
           .map((exp) => (
             <div key={exp.id} className="experience-card">
               <div className="icon-container">
-                <img className="experience-icon" src={exp.icon} alt="logo" />
+                <img className="experience-icon" src={exp.icon} alt={`${exp.title} logo`} />
               </div>
               <h3>{exp.title}</h3>
               <h4>{exp.company}</h4>
               <p className="experience-location">{exp.location}</p>
-              <p className="experience-duration">Duration: {calculateDuration(exp.startDate, exp.endDate)}</p>
               <p className="experience-description">{exp.description}</p>
             </div>
           ))}

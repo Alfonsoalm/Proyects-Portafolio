@@ -77,4 +77,11 @@ export const icons = [
         'descripcion':'descripcion',
         'valoracion': 4
     },
+    {
+        'nombre': 'VS Code',
+        'url': 'https://code.visualstudio.com/docs/getstarted/userinterface',
+        'imagen': 'vscode-icon.png',
+        'descripcion':'descripcion',
+        'valoracion': 4
+    },
 ]
