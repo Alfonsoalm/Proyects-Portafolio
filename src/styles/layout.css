@@ -11,7 +11,7 @@ body {
 
 /* Asegura que #root ocupe toda la altura */
 #root {
-  background-image: url("C:/Users/ant45/OneDrive/Escritorio/CURSOS/REACT/08-proyecto2-porfolio/public/images/background-image.jpg");
+  background-image: url("../../public/images/background-image.jpg");
   background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-position: center;
   background-repeat: repeat; /* Repite la imagen para cubrir el área */

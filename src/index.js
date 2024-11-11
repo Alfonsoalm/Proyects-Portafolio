@@ -9,7 +9,7 @@ import './styles/home.css';
 import './styles/portfolio.css';
 import './styles/projectView.css';
 import './styles/proyect.css';
-import './styles/services.css';
+import './styles/aboutMe.css';
 import './styles/experience.css';
 import './styles/socialNetwork.css';
 import './styles/education.css';

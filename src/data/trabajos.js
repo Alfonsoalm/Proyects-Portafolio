@@ -5,7 +5,8 @@ export const trabajos = [
         'url': 'https://github.com/Alfonsoalm/LoRaDRON',
         'tecnologias': 'LoRa, Arduino UNO, Arduino/C++, Protocolos I2C-SPI',
         'categorias': 'Electronica, Programacion, Control',
-        'descripcion':'----'
+        'descripcion':'Este proyecto comenzo con la idea desarrollar un dron propio desde cero usando un arduino, 4 motores y algunos sensores',
+
     },
 
     {

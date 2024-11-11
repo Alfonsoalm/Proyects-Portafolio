@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { sections } from '../data/secciones';
 
 export const Curriculum = () => {
+  const location = useLocation(); 
+  // Efecto para mover el scroll al inicio cuando la ubicación cambia
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
   return (
     <div className="page">
       <h1 className="heading">Curriculum</h1>

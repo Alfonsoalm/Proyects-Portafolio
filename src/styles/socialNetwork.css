@@ -1,36 +1,36 @@
 /* src/components/SocialNetwork.css */
 
 .social-network {
-    margin-top: 10px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  .social-link {
-    display: flex;
-    align-items: center;
-    color: #333;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .social-link:hover {
-    color: #1f1a65; /* Cambia a un color más oscuro al hacer hover */
-  }
-  
-  .social-icon {
-    font-size: 44px;
-    margin-right: 8px;
-  }
-  
-  .linkedin {
-    color: #0a66c2; /* Color específico de LinkedIn */
-  }
-  
-  .gmail {
-    color: #d14836; /* Color específico de Gmail */
-  }
-  
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column; /* Cambio para apilar verticalmente ícono y texto */
+  align-items: center; /* Alinea los elementos centralmente */
+  color: #333;
+  font-size: 18px; /* Puedes ajustar el tamaño de fuente del texto aquí si es necesario */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover{
+  color: white;
+}
+
+.social-icon {
+  font-size: 44px; /* Tamaño del ícono, ajusta según necesites */
+  margin-bottom: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+.linkedin {
+  color: #0a66c2; /* Color específico de LinkedIn */
+}
+
+.gmail {
+  color: #d14836; /* Color específico de Gmail */
+}

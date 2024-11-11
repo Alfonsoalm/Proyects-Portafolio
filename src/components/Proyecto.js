@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { trabajos } from '../data/trabajos';
 
 export const Proyecto = () => {
     const [proyecto, setProyecto] = useState({});
-    const params = useParams();
+    const params = useParams();   
+    const location = useLocation(); 
+    // Efecto para mover el scroll al inicio cuando la ubicación cambia
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
 
     useEffect(() => {
         const proyectoSeleccionado = trabajos.find(trabajo => trabajo.id === params.id);

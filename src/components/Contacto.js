@@ -1,8 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
 export const Contacto = () => {
   const form = useRef();
+  const location = useLocation(); 
+  // Efecto para mover el scroll al inicio cuando la ubicación cambia
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const sendEmail = (e) => {
     e.preventDefault();

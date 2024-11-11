@@ -1,12 +1,14 @@
 /* HEADER */
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 25px 45px;
   background-color: #1f1a65;
   color: white;
-  border-radius: 10px;
+  border-radius: 0px;
+  margin: 0px -6px 0px -6px;
 }
 
 .header .logo h3 {

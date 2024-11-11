@@ -16,7 +16,7 @@ export const RedesSociales = () => {
       <a href="mailto:alfonsoalm34@gmail.com" // Sustituye con tu dirección de Gmail
         className="social-link gmail">
         <FaEnvelope className="social-icon" />
-        <span>Gmail</span>
+        <span>alfonsoalm34@gmail.com</span>
       </a>
     </div>
   );

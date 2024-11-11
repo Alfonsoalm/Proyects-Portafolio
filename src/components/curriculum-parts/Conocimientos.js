@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export const Conocimientos = () => {
 
   return (
@@ -9,7 +8,6 @@ export const Conocimientos = () => {
       <hr />
       <div className="knowledge-container">
         <p>Still under construction...</p>
-        <p>Aun bajo construccion...</p>
       </div>
 
     </div>

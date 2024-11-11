@@ -1,11 +1,9 @@
-import React from 'react'
-import { RedesSociales } from '../components/RedesSociales'
+import React from 'react';
 
 export const Footer = () => {
   return (
     <footer className='footer'>
         Portfolio Eng. Alfonso Almenara &copy; Independient Project - 2024
-        <RedesSociales />
     </footer>
   )
 }
