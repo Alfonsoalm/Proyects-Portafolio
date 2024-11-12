@@ -26,6 +26,14 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
+    name: "Curso de chatbot y Soluciones IA",
+    institution: "Udemy",
+    issued: "Jun. 2024",
+    credentialID: "UC-73adcd98-08bf-4097-864f-44277c6492bb",
+    skills: ["Chatbots", "IA", "ChatGPT API"],
+    image: "logo_udemy.png",
+  },
+  {
     name: "Curso Raspberry Pi 4 Model B, con Python, IoT, Domótica",
     institution: "Udemy",
     issued: "Abr. 2024",
