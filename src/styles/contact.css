@@ -4,35 +4,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 400px; /* Ajustamos el ancho máximo */
+  max-width: 400px;
   max-height: 400px;
   margin: 20px auto;
-  padding: 50px; /* Aumentamos el padding */
+  padding: 50px;
   border-radius: 10px;
   background-color: #f4f4f4;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 18px; /* Aumentamos el tamaño de la fuente */
+  font-size: 18px;
 }
 
 .contact input[type="email"],
-.contact input[type="text"]{
+.contact input[type="text"],
+.contact textarea {
   width: 100%;
-  padding: 10px; /* Aumentamos el tamaño del padding */
+  padding: 10px; /* Consistent padding for all inputs and textarea */
   margin: 8px 0;
-  font-size: 20px; /* Tamaño del texto más grande */
+  font-size: 20px; /* Consistent font size for all inputs and textarea */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  font-family: inherit; /* Ensure it inherits the font family of the form */
 }
 
 .contact textarea {
-  width: 100%;
-  padding: 30px; /* Aumentamos el tamaño del padding */
-  margin: 8px 0;
-  font-size: 20px; /* Tamaño del texto más grande */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  resize: vertical; /* Allow vertical resize only, or remove this line to disable resizing */
 }
 
 .contact input[type="submit"] {
@@ -40,7 +36,7 @@
   padding: 15px 50px;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 22px; /* Aumentamos el tamaño del texto */
+  font-size: 22px;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -52,7 +48,7 @@
   background-color: #1f1a65;
 }
 
-/* Responsividad para móviles */
+/* Responsiveness for mobile */
 @media (max-width: 768px) {
   .contact {
     padding: 20px;
@@ -60,6 +56,7 @@
   }
 
   .contact input[type="text"],
+  .contact input[type="email"],
   .contact textarea {
     padding: 15px;
     font-size: 18px;

@@ -1,369 +1,323 @@
 export const trabajos = [
     {
         'id': `LoRa_Dron`,
-        'nombre': `Dron comunicado por LoRa`,
+        'nombre': `Drone communicated via LoRa`,
         'url': `https://github.com/Alfonsoalm/LoRaDRON`,
-        'tecnologias': `LoRa, Arduino UNO, Arduino/C++, Protocolos I2C-SPI`,
-        'categorias': `Electronica, Programacion, Control`,
+        'tecnologias': `LoRa, Arduino UNO, Arduino/C++, I2C-SPI Protocols`,
+        'categorias': `Electronics, Programming, Control`,
 
-        'descripcion': `Este proyecto comenzo con la idea de desarrollar un dron propio desde cero usando un arduino, 
-         4 motores y algunos sensores para medir el ángulo y estabilidad durante el vuelo. Se ha vuelto el mayor reto
-         al que me he enfrentado debido al tiempo de desarrollo y los problemas surgidos.`,
+        'descripcion': `This project began with the idea of developing a custom drone from scratch using an Arduino, 4 motors, and some sensors to measure angle and stability during flight. It has become the biggest challenge I have faced due to development time and arising issues.`,
         
-         'objetivos': {
-            'principal': `Desarrollar un dron controlado por LoRa que pueda ser operado a largas distancias`,
+        'objetivos': {
+            'principal': `Develop a LoRa-controlled drone that can operate over long distances`,
             'secundarios': [
-                'Ejecutar pruebas de medicion de la posicion angular del dron, bateria y altura',
-                'Ejecutar pruebas de envio de datos con el mando desarrollado en LoRa',
-                'Integrar motores y realizar la calibracion y ajustes para el control',
-                'Establecer la logica del programa para los diferentes estados del dron',
-                'Conseguir la estabilizacion del dron por medio de un sistema de control PID',
-                'Optimizar el consumo de energía para aumentar el tiempo de vuelo',
-                'Implementar características de seguridad para evitar pérdidas o daños'
+                'Conduct tests to measure the drone’s angular position, battery, and altitude',
+                'Perform data transmission tests with the developed LoRa controller',
+                'Integrate motors and carry out calibration and control adjustments',
+                'Establish the logic for the drone’s different states',
+                'Achieve drone stabilization through a PID control system',
+                'Optimize energy consumption to increase flight time',
+                'Implement safety features to prevent losses or damages'
             ]
         },
 
-        'proceso': `Se ha comenzado haciendo pruebas de medicion
-         de sensores con Arduino en concreto un MPU 6500, y aplicando 
-         tecnicas de filtrado software y hardware. Se ha optado por aplicar 
-         tecnica de filtrado hardware y filtros de media con 3000 mediciones
-         ademas de usar dos MPUs. Tras esto se ha pasado a probar el sensor 
-         ADC`,
-
+        'proceso': `Started with sensor measurement tests on Arduino, specifically with an MPU 6500, and applying hardware and software filtering techniques. Opted for hardware filtering and averaging filters with 3000 measurements, using two MPUs. Subsequently, tested the ADC sensor.`,
+        
         'esquema': '',
 
         'desafios': [
-            `Problemas con IMU MPU9250 Falso -> MPU 6500`,
-            `Problemas de comunicaciones Bluetooth iniciales`,
-            `Problemas de estabilidad y robustez de la estructura impresa 3D`,
-            `Dificultad de tunning de los 15 parametros PID`,
+            `Issues with false IMU MPU9250 -> MPU 6500`,
+            `Initial Bluetooth communication issues`,
+            `Stability and robustness problems with 3D printed structure`,
+            `Difficulty in tuning 15 PID parameters`,
         ],
 
         'soluciones': [
-            `Uso de MPU 6050 en conjunto con MPU 6500`,
-            `Uso de comunicacion Lora`,
-            `Cambio de estructura a un material mas robusto`,
-            `Aun en proceso`,
+            `Use of MPU 6050 alongside MPU 6500`,
+            `Use of LoRa communication`,
+            `Changed structure to more robust material`,
+            `Still in progress`,
         ],
 
         'lecciones aprendidas': 
-        `Familiarizacion con ADC, diferentes IMUs, sistema de
-         calibracion de motores brushless y protocolo lora`,
+        `Familiarity with ADC, different IMUs, brushless motor calibration systems, and the LoRa protocol`,
 
         'imagenes': [
             `LoRa_Dron_adc.png`,
-            `LoRa_Dron_bateria.png`,
-            `LoRa_Dron_motores.png`,
-            `LoRa_Dron_zumbador.png`,
+            `LoRa_Dron_battery.png`,
+            `LoRa_Dron_motors.png`,
+            `LoRa_Dron_buzzer.png`,
             `LoRa_Dron_Lora-sx1278.png`,
             `LoRa_Dron_hc-sr04.png`,
             `LoRa_Dron_mpu6050.png`,
             `LoRa_Dron_mpu6500-bmp280.png`,
         ],
 
-        'estado': 'En desarrollo',
+        'estado': 'In development',
     },
 
     {
         'id': 'remote-control-LoRa',
-        'nombre':'Mando con protocolo LoRa',
+        'nombre': 'Controller with LoRa protocol',
         'url': 'https://github.com/Alfonsoalm/LoRaDRON',
-        'tecnologias': 'LoRa, Arduino Micro, Arduino/C++, Protocolos I2C-SPI',
-        'categorias': 'Electronica, Programacion',
+        'tecnologias': 'LoRa, Arduino Micro, Arduino/C++, I2C-SPI Protocols',
+        'categorias': 'Electronics, Programming',
 
-        'descripcion': `Este proyecto es complementario al del Dron LoRa, y se 
-        ejecutó antes para poder hacer las pruebas con el dron. Funciona con un
-        arduino Micro y un modulo LoRa que conecta con el dron.`,
+        'descripcion': `This project complements the LoRa Drone project and was executed first to perform drone tests. It works with an Arduino Micro and a LoRa module that connects to the drone.`,
 
         'objetivos': {
-            'principal': `Diseño de un mando capaz de conectarse por LoRa con el dron diseñado`,
+            'principal': `Design a controller capable of connecting via LoRa with the designed drone`,
             'secundarios': [
-                `Lectura analógica de los potenciometros`,
-                `Muestra por pantalla OLED y por puerto Serie de los valores enviados`,
-                `Envio por LoRa de los valores al dron`,
-                `Pruebas de calibracion de motores con el mando`,
+                `Analog reading of potentiometers`,
+                `Display values sent on OLED screen and Serial Port`,
+                `Send values to the drone via LoRa`,
+                `Motor calibration tests with the controller`,
             ]
         },
 
-        'proceso': `Se comenzo con un esquema eléctrico de los diferentes componentes
-        y de los pines empleados en el Arduino Micro, posteriormente se diseña en Solidworks
-        las partes del mando. Se conectan los potenciometro y se hacen pruebas de medición.
-        Se conecta el modulo LoRa para enviar los datos y se hacen las pruebas finales`,
+        'proceso': `Started with an electrical schematic of the various components and pins used on the Arduino Micro, then designed the controller parts in Solidworks. Potentiometers were connected for measurement tests, followed by connecting the LoRa module for data transmission and conducting final tests.`,
         
         'esquema': ``,
 
         'desafios': [
-            `Diseño ergonómico del mando`,
-            `Organizacion espacial de los componentes en el mando`,
+            `Ergonomic design of the controller`,
+            `Spatial organization of components in the controller`,
         ],
 
         'soluciones': [
-            `Diseño de un segundo mando con mejoras aplicadas`,
-            `Diseño del esquema electrico y correcta colocación`,
+            `Designed a second controller with applied improvements`,
+            `Designed the electrical schematic and correct placement`,
         ],
 
         'lecciones aprendidas': [
-            `Empleo del modulo LoRa SX1278`,
-            `Diseño de un MVP de mando conectado por LoRa`
+            `Use of the LoRa SX1278 module`,
+            `Design of an MVP for a LoRa-connected controller`
         ],
 
         'imagenes': [
             ``,
         ],
 
-        'estado': 'Terminado',
+        'estado': 'Completed',
     },
 
     {
         'id': 'arm-robot-ESP32',
-        'nombre':'Brazo robotico con ESP32',
+        'nombre': 'Robotic Arm with ESP32',
         'url': 'linkedin.com',
-        'tecnologias': 'ESP32, Servomotores, Motor Stepper, Arduino/C++',
-        'categorias': 'Impresion 3D, Electronica, Programacion',
+        'tecnologias': 'ESP32, Servomotors, Stepper Motor, Arduino/C++',
+        'categorias': '3D Printing, Electronics, Programming',
 
-        'descripcion': `El proyecto comienzo imprimiendo parte por parte de un
-         brazo robotico obtenido de internet, luego ensamblandolo con 
-         los servomotores y probando el conjunto con los drivers de los motores`,
+        'descripcion': `The project began by printing parts of a robotic arm obtained from the internet, then assembling it with servomotors and testing it with motor drivers.`,
 
         'objetivos': {
-            'principal': `Impresion y Ensamblaje del brazo y sus componentes`,
+            'principal': `Print and assemble the arm and its components`,
             'secundarios': [
-                `Impresion de cada parte del brazo`,
-                `Ensamblaje de cada parte y diseño de mejoras`,
-                `Pruebas de los motores`,
+                `Print each part of the arm`,
+                `Assemble each part and design improvements`,
+                `Motor testing`,
             ]
         },
 
-        'proceso': `Se comenzó diseñando con una Ender 3 las partes del brazo
-        robótico para su ensamblaje posterior. Luego debido a los problemas de
-        impresión se paso a un Elegoo Neptune 4 PLUS de reciente adquisición 
-        que obtuvo muchos mejores resultados. Finalmente se ajustaron tras imprimir
-        los componentes determinadas uniones y se realizaron las pruebas de 
-        movimiento de los servomotores y del motor Paso a Paso del eje.`,
-
+        'proceso': `Began designing with an Ender 3 for arm parts for subsequent assembly. After experiencing printing issues, switched to a recently acquired Elegoo Neptune 4 PLUS, achieving much better results. Finally, adjusted connections and tested movements of the servomotors and the axis Stepper motor.`,
+        
         'esquema': ``,
 
         'desafios': [
-            `Impresión correcta de las piezas`,
-            `Amplia cantidad de piezas impresas`,
+            `Correct printing of parts`,
+            `Large number of printed pieces`,
         ],
 
         'soluciones': [
-            `Impresion en una impresora más fiable`,
-            `Paciencia en la fabricación`,
+            `Used a more reliable printer`,
+            `Patience in manufacturing`,
         ],
 
         'lecciones aprendidas': [
-            `Pruebas del driver I2C para los servomotores`,
-            `Creación de un MVP de brazo robotico`,
+            `Testing I2C driver for servomotors`,
+            `Creation of a robotic arm MVP`,
         ],
 
         'imagenes': [
             ``,
         ],
 
-        'estado': 'Terminado',
+        'estado': 'Completed',
     },
 
     {
         'id': 'webserver-ESP32',
-        'nombre':'Servidor web con ESP32',
+        'nombre': 'Web Server with ESP32',
         'url': 'https://github.com/Alfonsoalm/ESP32_Webserver',
-        'tecnologias': 'ESP32, JS, HTML, CSS, Arduino/C++', 
-        'categorias': 'Programacion, Interfaces WEB',
+        'tecnologias': 'ESP32, JS, HTML, CSS, Arduino/C++',
+        'categorias': 'Programming, Web Interfaces',
 
-        'descripcion': `El proyecto comenzo con la idea de medir una serie de 
-        variables ambientales de diversos entorno del hogar, registrar 
-        dichos datos y mostrar en una interfaz sencilla`,
+        'descripcion': `The project started with the idea of measuring a series of environmental variables in various household environments, recording these data, and displaying them on a simple interface.`,
 
         'objetivos': {
-            'principal': `Creacion de un servidor web para la visualizacion y 
-            almacenamiento de variables de temperatura, humedad, luz y CO2`,
+            'principal': `Create a web server to visualize and store temperature, humidity, light, and CO2 variables`,
             'secundarios': [
-                `Conexionado de los sensores al ESP32`,
-                `Comunicacion WiFi del ESP32`,
-                `Diseño de la interfaz de visualizacion IoT`
+                `Connecting sensors to the ESP32`,
+                `WiFi communication of the ESP32`,
+                `Designing an IoT visualization interface`
             ]
         },
 
-        'proceso': `Se comenzo haciendo pruebas de medicion con los sensores
-        de medición de las variables del entorno, luego se conecto el ESP32 por 
-        WiFi a la red local para observar la interfaz y finalmente se ajusto 
-        para un diseño mas estético.`,
-
+        'proceso': `Began with testing measurements of environmental variables sensors, then connected the ESP32 via WiFi to the local network to view the interface, and finally made aesthetic adjustments.`,
+        
         'esquema': ``,
 
         'desafios': [
-            `Desarrollo de la interfaz y comunicación WiFi`,
+            `Interface development and WiFi communication`,
         ],
 
         'soluciones': [
-            `Diseño del codigo de la interfaz en ESP32`,
+            `Developed code for the ESP32 interface`,
         ],
 
         'lecciones aprendidas': [
-            `Diseño de interfaz web`,
-            `Uso de sensores de CO2 y Luz digital`,
-            `Almacenamiento de datos en el ESP32`,
-            `Compilación de código para ESP32`,
-            `Empleo de PlatformIo y VSCode para la programacion`
+            `Web interface design`,
+            `Use of CO2 and light sensors`,
+            `Data storage in the ESP32`,
+            `ESP32 code compilation`,
+            `Using PlatformIo and VSCode for programming`
         ],
 
         'imagenes': [
             ``,
         ],
 
-        'estado': 'Terminado',
+        'estado': 'Completed',
     },
 
     {
         'id': 'domotic-server-raspberry',
-        'nombre':'Servidor domotico Home Assistant con Rapsberry Pi',
+        'nombre': 'Home Automation Server with Raspberry Pi',
         'url': 'https://github.com/Alfonsoalm/ESP32_Webserver',
         'tecnologias': 'Linux, HomeAssistant, DHT22-Sensor',
-        'categorias': 'Domotica, Electronica',
+        'categorias': 'Home Automation, Electronics',
 
-        'descripcion': `Se comenzo con la idea de diseñar un servidor domotico
-        en mi habitacion para el control de luces led rgb, y añadieron otros 
-        dispositivos para establecer un servidor domótico con HomeAssistant
-        controlado de forma remota por red VPN Tailscale`,
+        'descripcion': `Began with the idea of designing a home automation server in my room to control LED RGB lights, later adding other devices to establish a HomeAssistant server remotely controlled via Tailscale VPN.`,
 
         'objetivos': {
-            'principal': `Creación del servidor domótico con Raspberry Pi`,
+            'principal': `Create a home automation server with Raspberry Pi`,
             'secundarios': [
-                `Comunicación de los dispositivos bluetooth/wifi`,
-                `Instalación de HomeAssistant`,
-                `Pruebas de control remoto con VPN`,
+                `Bluetooth/WiFi device communication`,
+                `HomeAssistant installation`,
+                `Remote control tests with VPN`,
             ]
         },
 
-        'proceso': `Se comienza haciendo pruebas de encendido de una tira LED bluetooth
-        mediante una raspberry Pi con HomeAssistant instalado, luego se añade diversos
-        dispositivos como ESP32 con sensores de temperatura y humedad, y varias luces
-        con conexión WiFi. Finalmente se prueba la conexión remota con VPN.`,
+        'proceso': `Started with tests to turn on a Bluetooth LED strip using a Raspberry Pi with HomeAssistant installed, then added various devices like ESP32 with temperature and humidity sensors and several WiFi-connected lights. Finally, tested remote connection using VPN.`,
+        
         'esquema': ``,
+
         'desafios': [
-            `Multiples instalaciones posibles de HomeAssistant`,
-            `Control remoto fuera de red local del hogar`
+            `Multiple installation options for HomeAssistant`,
+            `Remote control outside the local home network`
         ],
 
         'soluciones': [
-            `Investigación de la mejor opción`,
-            `Empleo de VPN y dominio DNS para la conexión remota`
+            `Investigated the best option`,
+            `Used VPN and DNS domain for remote connection`
         ],
 
         'lecciones aprendidas': [
-            `Familiarización con HomeAssistant`,
-            `Uso de VPN y redes`
+            `Familiarity with HomeAssistant`,
+            `VPN and networking usage`
         ],
 
         'imagenes': [
             ``,
         ],
 
-        'estado': 'Terminado',
+        'estado': 'Completed',
     },
 
     {
         'id': 'speaker-matriz-led',
-        'nombre':'Gran Altavoz Bluetooth Matriz LED',
+        'nombre': 'Large LED Matrix Bluetooth Speaker',
         'url': 'https://github.com/Alfonsoalm/Altavoz-Con-Analizador-De-Espectro',
-        'tecnologias': 'ESP8266, Arduino/C++, Microfono, Modulo Bluetooth',
-        'categorias': 'Electronica, Programacion',
+        'tecnologias': 'ESP8266, Arduino/C++, Microphone, Bluetooth Module',
+        'categorias': 'Electronics, Programming',
 
-        'descripcion': `Este proyecto comenzo con la idea de desarrollar un gran altavoz que fuese
-        capaz de mostrar por una matriz led las frecuencia de la musica que reproduce. Emplea un micrófono 
-        y analisis del las frecuencia del audio para iluminar la matriz.`,
+        'descripcion': `This project started with the idea of developing a large speaker capable of displaying music frequencies it plays on an LED matrix. It uses a microphone and frequency analysis of the audio to light up the matrix.`,
         
         'objetivos': {
-            'principal': `Fabricar un gran altavoz con gran calidad de sonido, y un
-            sistema de retroiluminacion LED mediante el análisis de las frecuencias`,
+            'principal': `Build a large speaker with high-quality sound and an LED backlight system through frequency analysis`,
             'secundarios': [
-                `Hacer pruebas de sonido con la bocina, el amplificador y un modulo bluetooth`,
-                `Conectar el modulo receptor de audio con microfono a un ESP32, que analice las frecuencia`,
-                `Conectar la matriz Led al ESP32 para terminar el sistema`,
+                `Test sound quality with speaker, amplifier, and Bluetooth module`,
+                `Connect audio receiver module with a microphone to an ESP32 for frequency analysis`,
+                `Connect LED matrix to ESP32 to complete the system`,
             ]
         },
 
-        'proceso': `Se comenzó con la fabricación de la estructura del altavoz y
-        la realizacion de los orificios para el potenciometro del audio, el interruptor
-        y la bocina. Posteriormente tras el pintado, se colocan los componentes de audio, el
-        modulo bluetooth, el amplificador  y la bocina y se prueba la calida de sonido.
-        Tras esto, se coloca el microcontrolador y el dispositivo receptor para analizar el
-        audio reproducido, y se conecta la matriz led para mejorar la estetica. La pantalla 
-        transparente de los leds se fabrica en impresora 3d con filamento transparente.`,
+        'proceso': `Began with the speaker structure and drilling holes for the audio potentiometer, switch, and speaker. After painting, audio components, Bluetooth module, amplifier, and speaker were installed and sound quality tested. Then, connected the microcontroller and receiver to analyze reproduced audio, and connected the LED matrix for aesthetics. The LED screen was made with a 3D printer using transparent filament.`,
         
         'esquema': '',
 
         'desafios': [
-            `Los problemas de ruido inducido en los cables del audio emitido`,
-            `Funcionamiento incorrecto de la matriz led`,
+            `Noise issues in audio cables`,
+            `Malfunctioning LED matrix`,
         ],
 
         'soluciones': [
-            `Adicion de componente filtrador de ruido`,
-            `Pruebas de conexionado de los leds mas rigurosas`,
+            `Added noise filtering components`,
+            `More rigorous LED connection tests`,
         ],
 
         'lecciones aprendidas': [
-        `Analisis frecuencial del sonido`,
-        `Familiaridad con una matriz led`,
-        `Familiaridad con amplificador de sonido`,
-        `Familiaridad con modulo bluetooth`,
+        `Audio frequency analysis`,
+        `Familiarity with LED matrix`,
+        `Familiarity with audio amplifiers`,
+        `Familiarity with Bluetooth modules`,
         ],
 
         'imagenes': [
             ``,
-
         ],
-        'estado': 'Terminado',
+        'estado': 'Completed',
     },
     {
         'id': 'mini-speaker-Bluetooth',
-        'nombre':'Mini Altavoz Bluetooth Inalambrico',
+        'nombre': 'Mini Wireless Bluetooth Speaker',
         'url': 'https://github.com/Alfonsoalm/Altavoz-Con-Analizador-De-Espectro',
-        'tecnologias': 'Bluetooth, Bateria 12V',
-        'categorias': 'Electronica',
+        'tecnologias': 'Bluetooth, 12V Battery',
+        'categorias': 'Electronics',
 
-        'descripcion': `Este proyecto comenzo como una necesidad de crear un altavoz de escritorio 
-        para reproducir musica de forma inalámbrica sin depender de cable de alimentacion ni de conector
-        de audio. Se alimenta con una bateria de 12 V y tiene un modulo bluetooth para conectar con los
-        dispositivos.`,
+        'descripcion': `This project started as a need to create a desktop speaker for wireless music playback without depending on a power cable or audio jack. It is powered by a 12V battery and has a Bluetooth module to connect to devices.`,
 
         'objetivos': {
-            'principal': `Montar un altavoz 100% inalambrico`,
+            'principal': `Build a 100% wireless speaker`,
             'secundarios': [
-                `Conectar modulo Bluetooth con amplificador y bocinas`,
-                `Alimentar el sistema con una batería`,
-                `Hacer las pruebas del sistema completo`,
+                `Connect Bluetooth module with amplifier and speakers`,
+                `Power the system with a battery`,
+                `Perform system tests`,
             ]
         },
-        'proceso': `Se comenzo fabricando la estructura de madera y haciendo el 
-        orificio de la bocina, luego mediante el conexionado de las diferentes 
-        partes del sistema de audio se prueba la calidad de sonido y finalmente
-        las pruebas de autonomia de la bateria para alcanzar las 3/4h de duración`,
-
+        'proceso': `Began by building the wooden structure and making the speaker hole, then tested the audio system's sound quality through connections of different parts, and finally tested battery autonomy to reach 3/4 hours of duration.`,
+        
         'esquema': ``,
 
         'desafios': [
-            `Obtener una calidad de sonido aceptable con el amplificador disponible`,
-            `Alcanzar una autonomia razonable con un buen diseño de bateria`,
+            `Achieving acceptable sound quality with the available amplifier`,
+            `Achieving reasonable autonomy with a good battery design`,
         ],
 
         'soluciones': [
-            `Mejora con componentes adicionales`,
-            `Diseño de una bateria con celdas de buena calidad`
+            `Enhanced with additional components`,
+            `Designed a battery with high-quality cells`
         ],
 
         'lecciones aprendidas': [
-            `Diseño de bateria en función del consumo del altavoz`,
-            `Conocimiento en varios amplificadores del mercado`
+            `Battery design based on speaker consumption`,
+            `Knowledge of various market amplifiers`
         ],
 
         'imagenes': [
             ``,
         ],
 
-        'estado': 'Terminado',
+        'estado': 'Completed',
     }
 ]

@@ -1,5 +1,3 @@
-/* src/components/SocialNetwork.css */
-
 .social-network {
   margin-top: 10px;
   margin-bottom: 40px;
@@ -10,11 +8,12 @@
 }
 
 .social-link {
+  position: relative; /* Make the parent relative to position the tooltip */
   display: flex;
-  flex-direction: column; /* Cambio para apilar verticalmente ícono y texto */
-  align-items: center; /* Alinea los elementos centralmente */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align items */
   color: #333;
-  font-size: 18px; /* Puedes ajustar el tamaño de fuente del texto aquí si es necesario */
+  font-size: 18px; /* Adjust text font size as needed */
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -23,28 +22,50 @@
   text-align: center;
 }
 
-.social-link:hover{
+.social-link:hover {
   color: white;
 }
 
 .social-icon {
-  font-size: 44px; /* Tamaño del ícono, ajusta según necesites */
-  margin-bottom: 8px; /* Espaciado entre el ícono y el texto */
+  font-size: 44px; /* Icon size, adjust as needed */
+  margin-bottom: 8px; /* Spacing between icon and text */
 }
 
 .linkedin {
-  color: #0a66c2; /* Color específico de LinkedIn */
+  color: #0a66c2; /* LinkedIn specific color */
 }
 
 .gmail {
-  color: #d14836; /* Color específico de Gmail */
+  color: #d14836; /* Gmail specific color */
+}
+
+/* Tooltip styles */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%; /* Positions the tooltip below the parent element */
+  left: 100%; /* Centers the tooltip horizontally */
+  transform: translateX(-5%); /* Centers the tooltip */
+  transform: translateY(50%); /* Centers the tooltip */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: visibility 0.3s, opacity 0.3s;
+  z-index: 1; /* Ensure the tooltip appears above other elements */
+}
+
+.social-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 799px) {
-  .social-network{
+  .social-network {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
   }
-
 }

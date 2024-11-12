@@ -4,7 +4,6 @@ import { trabajos } from '../data/trabajos';
 
 export const Proyecto = () => {
     const [proyecto, setProyecto] = useState({});
-    const [imagenActual, setImagenActual] = useState(0);
     const params = useParams();
     const location = useLocation();
 
@@ -16,16 +15,16 @@ export const Proyecto = () => {
         const proyectoSeleccionado = trabajos.find(trabajo => trabajo.id === params.id);
         if (proyectoSeleccionado) {
             setProyecto(proyectoSeleccionado);
-            setImagenActual(0); // Resetea el índice de imagen al cargar un nuevo proyecto
+            console.log("Selected project state:", proyectoSeleccionado.estado); // Add this line
         }
     }, [params.id]);
 
     function calcularPorcentaje(estado) {
         const estados = {
-            "En pruebas iniciales": 25,
-            "En desarrollo": 50,
-            "Casi terminado": 75,
-            "Terminado": 100
+            "In initial tests": 25,
+            "In development": 50,
+            "Almost finished": 75,
+            "Completed": 100,
         };
         return estados[estado] || 0;  // Return 0 if the state is not defined
     }

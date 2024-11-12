@@ -2,7 +2,7 @@
 
 export const courses = [
   {
-    name: "Curso de Git",
+    name: "Git Course",
     institution: "Mastermind",
     issued: "Nov. 2024",
     credentialID: "14ededda13eb4dd2921e2bd05cee0c98",
@@ -10,15 +10,15 @@ export const courses = [
     image: "logo_mastermind.png",
   },
   {
-    name: "Curso de Clean Code",
+    name: "Clean Code Course",
     institution: "Mastermind",
     issued: "Nov. 2024",
     credentialID: "9f9160b6597d40139ba7fee661438898",
-    skills: ["Clean Code", "Buenas practicas"],
+    skills: ["Clean Code", "Good programming practices"],
     image: "logo_mastermind.png",
   },
   {
-    name: "Master en REACT: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+",
+    name: "React Master Course: Learn ReactJS, Hooks, MERN, NodeJS, JWT+",
     institution: "Udemy",
     issued: "Jun. 2024",
     credentialID: "UC-73adcd98-08bf-4097-864f-44277c6492bb",
@@ -26,7 +26,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Curso de chatbot y Soluciones IA",
+    name: "Chatbot Course and AI Solutions",
     institution: "Udemy",
     issued: "Jun. 2024",
     credentialID: "UC-73adcd98-08bf-4097-864f-44277c6492bb",
@@ -34,7 +34,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Curso Raspberry Pi 4 Model B, con Python, IoT, Domótica",
+    name: "Raspberry Pi 4 Course, with Python, IoT, Home Automation",
     institution: "Udemy",
     issued: "Abr. 2024",
     credentialID: "UC-5af96ad7-c88a-4d6d-ba57-a1167d429eb5",
@@ -42,28 +42,28 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Fundación de código para ROS",
+    name: "ROS Basic Course",
     institution: "The Construct",
     issued: "Dic. 2023",
     skills: ["Robot Operating System (ROS)"],
     image: "logo_udemy.png",
   },
   {
-    name: "Laboratorio de Asistentes de voz para dispositivos IoT",
+    name: "Voice Assistants Lab for IoT Devices",
     institution: "OpenWebinars",
     issued: "Dic. 2023",
     skills: ["IoT"],
     image: "logo_openwebinars.png",
   },
   {
-    name: "Conviértete en especialista en desarrollo Python",
+    name: "Become a Python development specialist",
     institution: "LinkedIn",
     issued: "Nov. 2023",
     skills: ["Python"],
     image: "logo_linkedin.png",
   },
   {
-    name: "SOLIDWORKS avanzado",
+    name: "Solidworks advanced",
     institution: "LinkedIn",
     issued: "Nov. 2023",
     skills: ["SolidWorks"],
@@ -86,7 +86,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Curso IoT - Conéctate al Futuro 2023",
+    name: "Curso IoT - Connect to future 2023",
     institution: "Udemy",
     issued: "Ago. 2023",
     credentialID: "UC-6b4438bd-82a3-4303-98b3-6820ea30d017",
@@ -94,7 +94,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Curso de programación C++ - De principiante a avanzado (46 h)",
+    name: "Advanced Programming Course C++ (46 h)",
     institution: "Udemy",
     issued: "Ago. 2023",
     credentialID: "UC-7f6d939a-fdd8-4c2a-929b-c0c3cbd5351b",
@@ -102,7 +102,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Curso Power BI Avanzado",
+    name: "Power BI Advanced Course",
     institution: "Udemy",
     issued: "Jul. 2023",
     credentialID: "7734792c-6223-4b06-8ee1-9145ecef990c",
@@ -110,7 +110,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Ultimate Python: de cero a programador experto",
+    name: "Ultimate Python: zero to advanced",
     institution: "Udemy",
     issued: "Mar. 2023",
     credentialID: "UC-b938c7bb-af27-4f48-be1f-ce8fbaf197c9",
@@ -118,27 +118,27 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Fusion 360: Impresión en 3D esencial",
+    name: "Fusion 360: 3D Printing basic",
     institution: "LinkedIn",
     issued: "Ago. 2022",
     skills: ["Autodesk Fusion 360"],
     image: "logo_linkedin.png",
   },
   {
-    name: "SOLIDWORKS esencial",
+    name: "Solidworks Course",
     institution: "LinkedIn",
     issued: "Ago. 2022",
     image: "logo_linkedin.png",
   },
   {
-    name: "Access 2016 esencial",
+    name: "Access 2016 Course",
     institution: "LinkedIn",
     issued: "Jul. 2022",
     skills: ["Microsoft Access"],
     image: "logo_linkedin.png",
   },
   {
-    name: "OpenCV: Curso OpenCV para visión por ordenador con Python",
+    name: "OpenCV Course: for Computer Vision with Python",
     institution: "Udemy",
     issued: "Jun. 2022",
     credentialID: "UC-19d19428-debb-465d-aac9-9a8e0d78cd5e",
@@ -146,7 +146,7 @@ export const courses = [
     image: "logo_udemy.png",
   },
   {
-    name: "Cuarta revolución industrial: Internet de las cosas",
+    name: "Fourth industrial revolution: Internet of things",
     institution: "LinkedIn",
     issued: "May. 2022",
     skills: ["Internet of Things"],
@@ -166,13 +166,13 @@ export const courses = [
     image: "logo_linkedin.png",
   },
   {
-    name: "Python esencial",
+    name: "Essential Python",
     institution: "LinkedIn",
     issued: "Abr. 2022",
     image: "logo_linkedin.png",
   },
   {
-    name: "eCAMPUS KNX, Curso ETS5 básico",
+    name: "eCAMPUS KNX, ETS5 basic Course",
     institution: "KNX España",
     issued: "Abr. 2022",
     image: "",

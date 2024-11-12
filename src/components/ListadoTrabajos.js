@@ -6,10 +6,10 @@ export const ListadoTrabajos = ({ limite }) => {
 
   function calcularPorcentaje(estado) {
     const estados = {
-        "En pruebas iniciales": 25,
-        "En desarrollo": 50,
-        "Casi terminado": 75,
-        "Terminado": 100
+      "In initial tests": 25,
+      "In development": 50,
+      "Almost finished": 75,
+      "Completed": 100,
     };
     return estados[estado] || 0; 
   }
