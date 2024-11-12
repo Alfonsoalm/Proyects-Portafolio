@@ -39,3 +39,12 @@
 .gmail {
   color: #d14836; /* Color específico de Gmail */
 }
+
+@media (max-width: 799px) {
+  .social-network{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+}

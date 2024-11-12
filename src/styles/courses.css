@@ -1,98 +1,113 @@
-/* src/styles/Courses.css */
-
 .courses-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  
-  .course-card {
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  .course-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .course-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #2f2895;
-  }
-  
-  .course-card p {
-    margin: 5px 0;
-    color: #333;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
 
-  .course-image-container {
-    text-align: center;
-    margin-bottom: 15px; /* Add space below the image */
+.course-card {
+  width: 80%;
+  min-height: 350px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Prevent text from overflowing */
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #2f2895;
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.course-card p {
+  margin: 5px 0;
+  color: #333;
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.course-image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.course-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* Maintain aspect ratio without distortion */
+}
+
+.credential-link {
+  color: #1e1a6d;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.skills-section {
+  margin-top: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-item {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f2895;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button.active {
+  background-color: #1e1a6d;
+}
+
+.pagination-button:hover:not(.active) {
+  background-color: #463f9e;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .courses-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
   }
-  
-  .course-image {
-    max-width: 100px; /* Adjust the size as needed */
-    height: auto;
-    border-radius: 8px; /* Optional: round the corners */
+}
+
+@media (max-width: 480px) {
+  .courses-container {
+    grid-template-columns: 1fr; /* Single column for small devices */
   }
-  
-  .credential-link {
-    color: #1e1a6d;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-left: 5px;
-  }
-  
-  .skills-section {
-    margin-top: 10px;
-  }
-  
-  .skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .skill-item {
-    background-color: #e0e0e0;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.9em;
-  }
-  
-  .pagination {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination-button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    background-color: #2f2895;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pagination-button.active {
-    background-color: #1e1a6d;
-  }
-  
-  .pagination-button:hover:not(.active) {
-    background-color: #463f9e;
-  }
-  
+}

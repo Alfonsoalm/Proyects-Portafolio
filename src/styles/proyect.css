@@ -150,3 +150,57 @@
   font-weight: bold;
   transition: width 0.3s ease;
 }
+
+
+@media (max-width: 768px) {
+  .project-page {
+    padding: 20px 10px;
+  }
+
+  .project-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .project-technologies {
+    font-size: 16px;
+  }
+
+  .project-text,
+  .project-process-text,
+  .project-objectives-principal,
+  .project-objectives-secondaries {
+    font-size: 16px;
+    margin: 10px 15px;
+  }
+
+  .project-mask {
+    height: 300px; /* Adjust height to auto to accommodate different image ratios */
+  }
+
+  .project-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-progress-container {
+    height: 20px;
+    width: 90%;
+  }
+
+  .project-progress {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .project-link {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
