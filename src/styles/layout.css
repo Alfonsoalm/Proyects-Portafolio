@@ -4,9 +4,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   background-color: #f2f4f8;
-  color: #333;
 }
 
 /* Asegura que #root ocupe toda la altura */
@@ -15,7 +14,6 @@ body {
   background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-position: center;
   background-repeat: repeat; /* Repite la imagen para cubrir el área */
-  color: #ffffff;
   min-height: 100vh; /* Cambiamos a min-height para asegurar que ocupe todo el alto */
   display: flex;
   flex-direction: column;

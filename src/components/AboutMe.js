@@ -33,7 +33,7 @@ export const AboutMe = () => {
     {
       id: 3,
       title: 'Gestión de Proyectos',
-      description: 'Coordinación y gestión de proyectos comerciales de software y hardware.',
+      description: 'Coordinación y gestión de proyectos de software y hardware.',
       icon: faProjectDiagram,
     },
   ];

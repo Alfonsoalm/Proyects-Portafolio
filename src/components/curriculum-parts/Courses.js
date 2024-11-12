@@ -36,12 +36,22 @@ export const Courses = () => {
 const CourseCard = ({ course }) => {
   return (
     <div className="course-card">
+      {/* Display course image if available */}
+      {course.image && (
+        <div className="course-image-container">
+          <img
+            src={`/images/companies/${course.image}`}
+            alt={`${course.institution} logo`}
+            className="course-image"
+          />
+        </div>
+      )}
       <h3>{course.name}</h3>
       <p><strong>Institution:</strong> {course.institution}</p>
       <p><strong>Issued:</strong> {course.issued}</p>
       {course.credentialID && (
         <p>
-          <strong>Credential ID:</strong> {course.credentialID} 
+          <strong>Credential ID:</strong>
           <a 
             href={`https://www.udemy.com/certificate/${course.credentialID}`} 
             target="_blank" 

@@ -12,7 +12,7 @@ export const Experiencia = () => {
       const nextIndex = (currentIndex + 1) % experiencias.length;
       setSelectedExperience(experiencias[nextIndex].id);
       setShowPeriod(experiencias[nextIndex].id);
-    }, 6000); // Cambia cada 7 segundos
+    }, 3000); // Cambia cada 4 segundos
 
     return () => clearInterval(intervalRef.current); // Limpia el intervalo al desmontar el componente
   }, [selectedExperience]);

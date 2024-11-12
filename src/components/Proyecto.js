@@ -25,7 +25,7 @@ export const Proyecto = () => {
             "En pruebas iniciales": 25,
             "En desarrollo": 50,
             "Casi terminado": 75,
-            "Completado": 100
+            "Terminado": 100
         };
         return estados[estado] || 0;  // Return 0 if the state is not defined
     }
@@ -45,18 +45,18 @@ export const Proyecto = () => {
                 <p className="project-technologies">{proyecto.tecnologias}</p>
                 <p className="project-text">{proyecto.descripcion}</p>
                 
-                <h2>Objectives</h2>
-                <p><strong>Principal:</strong> {proyecto.objetivos?.principal}</p>
-                <ul>
+                <h2 className="project-objectives-title">Objectives</h2>
+                <p className="project-objectives-principal"><strong>Principal:</strong> {proyecto.objetivos?.principal}</p>
+                <ul className="project-objectives-secondaries">
                     {proyecto.objetivos?.secundarios?.map((objetivo, index) => (
                         <li key={index}>{objetivo}</li>
                     ))}
                 </ul>
 
-                <h2>Process</h2>
-                <p className="project-text">{proyecto.proceso}</p>
+                <h2 className="project-process-title">Process</h2>
+                <p className="project-process-text">{proyecto.proceso}</p>
                 
-                <h2>Challenges and Solutions</h2>
+                <h2 className="project-process-title">Challenges and Solutions</h2>
                 <table className="project-table">
                     <thead>
                         <tr>
@@ -74,7 +74,7 @@ export const Proyecto = () => {
                     </tbody>
                 </table>
 
-                <h2>Project Status</h2>
+                <h2 className="project-process-title">Project Status</h2>
                 <p className="project-text">{proyecto.estado}</p>
 
                 <div className="project-progress-container">
