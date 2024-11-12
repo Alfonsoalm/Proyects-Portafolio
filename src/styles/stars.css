@@ -19,7 +19,7 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
   
-  .star-container .tooltip {
+  .tooltip {
     visibility: hidden;
     width: 150px;
     color: #000000;
