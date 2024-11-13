@@ -1,20 +1,20 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
-import { Inicio } from '../components/Inicio';
-import { Portafolio } from '../components/Portafolio';
+import { Inicio } from '../components/Home';
+import { Portafolio } from '../components/Portfolio';
 import { AboutMe } from '../components/AboutMe';
 import { Curriculum } from '../components/Curriculum';
-import { Contacto } from '../components/Contacto';
+import { Contacto } from '../components/Contact';
 import { HeaderNav } from '../layout/HeaderNav';
 import { Footer } from '../layout/Footer';
 import { Error } from '../components/Error';
-import { Proyecto } from '../components/Proyecto';
-import { Conocimientos } from '../components/curriculum-parts/Conocimientos';
-import { Experiencia } from '../components/curriculum-parts/Experiencia';
-import { Educacion } from '../components/curriculum-parts/Educacion';
-import { Reconocimientos } from '../components/curriculum-parts/Reconocimientos';
+import { Proyecto } from '../components/Project';
+import { Conocimientos } from '../components/curriculum-parts/Knowledge';
+import { Experiencia } from '../components/curriculum-parts/Experience';
+import { Educacion } from '../components/curriculum-parts/Education';
+import { Reconocimientos } from '../components/curriculum-parts/Recognitions';
 import { ProjectView } from '../components/ProjectView';
-import { RedesSociales } from '../components/RedesSociales';
+import { RedesSociales } from '../components/SocialNetworks';
 import { Courses } from '../components/curriculum-parts/Courses';
 
 export const MisRutas = () => {

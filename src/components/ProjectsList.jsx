@@ -1,5 +1,5 @@
 import React from 'react';
-import { trabajos } from '../data/trabajos';
+import { trabajos } from '../data/projects';
 import { Link } from 'react-router-dom';
 
 export const ListadoTrabajos = ({ limite }) => {

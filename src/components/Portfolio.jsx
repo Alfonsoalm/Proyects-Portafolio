@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
-import { ListadoTrabajos } from './ListadoTrabajos';
+import { ListadoTrabajos } from './ProjectsList';
 
 export const Portafolio = () => {
   const location = useLocation(); 

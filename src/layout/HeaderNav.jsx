@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { RedesSociales } from '../components/RedesSociales';
+import { RedesSociales } from '../components/SocialNetworks';
 
 export const HeaderNav = () => {
   return (

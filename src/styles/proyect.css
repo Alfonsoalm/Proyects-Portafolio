@@ -12,28 +12,39 @@
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .project-mask {
   display: flex;
   justify-content: center;
-  height: 180px;
+  height: 330px; /* Adjust the height to fit the desired portion */
   align-items: center;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  position: relative; /* Allow for positioning of child elements */
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Enables positioning relative to the container */
+  top: 0; /* Aligns the top part of the image */
+  left: 0;
+  transform: translateY(-10%); /* Adjust this value to control how much of the image is shifted up */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
-
 
 .project-image:hover {
   transform: scale(1.03);
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Enables positioning relative to the container */
+  top: 0; /* Aligns the top part of the image */
+  left: 0;
+  transform: translateY(-10%); /* Adjust this value to control how much of the image is shifted up */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
 .project-title {
@@ -50,10 +61,6 @@
   color: black;
   font-style: italic;
   font-size: 18px;
-}
-
-.project-image{
-  width: 360px;
 }
 
 .project-text {
@@ -185,8 +192,11 @@
   }
 
   .project-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover; /* This ensures the image fills the container while maintaining aspect ratio */
+    object-position: top; /* This ensures that the top part of the image is shown */
+    transition: transform 0.3s ease-in-out;
   }
 
   .project-progress-container {

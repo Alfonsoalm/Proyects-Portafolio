@@ -1,4 +1,4 @@
-import { MisRutas } from './router/MisRutas';
+import { MisRutas } from './router/Routing';
 
 function App() {
   return (

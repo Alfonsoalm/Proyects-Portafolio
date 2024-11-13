@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import { trabajos } from '../data/trabajos';
+import { trabajos } from '../data/projects';
 
 export const Proyecto = () => {
     const [proyecto, setProyecto] = useState({});
@@ -37,7 +37,7 @@ export const Proyecto = () => {
             <div className="project-card">
                 
                 <div className="project-mask">
-                    <img src={"/images/" + proyecto.id + ".jpg"} alt={proyecto.nombre || 'Project Image'} />
+                    <img className="project-image" src={"/images/" + proyecto.id + ".jpg"} alt={proyecto.nombre || 'Project Image'} />
                 </div>
 
                 <h1 className="project-title">{proyecto.nombre}</h1>

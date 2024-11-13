@@ -1,5 +1,5 @@
 import React from 'react';
-import { trabajos } from '../data/trabajos'; // Asegúrate de tener esta importación correcta
+import { trabajos } from '../data/projects'; // Asegúrate de tener esta importación correcta
 
 export const Detalles = ({ id }) => {
     const proyecto = trabajos.find(trabajo => trabajo.id === id);

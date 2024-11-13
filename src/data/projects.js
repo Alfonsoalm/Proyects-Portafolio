@@ -1,5 +1,43 @@
 export const trabajos = [
     {
+        'id': 'react-app-web-job',
+        'nombre': 'React Web Aplicacion for Job Searching',
+        'url': 'https://github.com/Alfonsoalm/Pied-Piper-Frontend',
+        'tecnologias': 'React, NodeJS, JWT, MongoDB, JS',
+        'categorias': 'Programming',
+    
+        'descripcion': `This project arose due to the multiple shortcomings that I have been observing on LinkedIn.`,
+    
+        'objetivos': {
+            'principal': `Build a React Web Application for Job Searching`,
+            'secundarios': [
+            ]
+        },
+        'proceso': `Programming now`,
+        
+        'esquema': ``,
+    
+        'desafios': [
+            `Organization of application sections`,
+        ],
+    
+        'soluciones': [
+            `Development of interfaces, and 
+            functional and non-functional requirements`,
+        ],
+    
+        'lecciones aprendidas': [
+            `Desarrollo de aplicaciones Web con REACT`,
+            `Trabajar con APIs`,
+        ],
+    
+        'imagenes': [
+            ``,
+        ],
+    
+        'estado': 'In development',
+    },
+    {
         'id': `LoRa_Dron`,
         'nombre': `Drone communicated via LoRa`,
         'url': `https://github.com/Alfonsoalm/LoRaDRON`,
@@ -53,7 +91,7 @@ export const trabajos = [
             `LoRa_Dron_mpu6500-bmp280.png`,
         ],
 
-        'estado': 'In development',
+        'estado': 'Almost finished',
     },
 
     {
@@ -104,7 +142,7 @@ export const trabajos = [
     {
         'id': 'arm-robot-ESP32',
         'nombre': 'Robotic Arm with ESP32',
-        'url': 'linkedin.com',
+        'url': '',
         'tecnologias': 'ESP32, Servomotors, Stepper Motor, Arduino/C++',
         'categorias': '3D Printing, Electronics, Programming',
 
@@ -281,7 +319,7 @@ export const trabajos = [
     {
         'id': 'mini-speaker-Bluetooth',
         'nombre': 'Mini Wireless Bluetooth Speaker',
-        'url': 'https://github.com/Alfonsoalm/Altavoz-Con-Analizador-De-Espectro',
+        'url': '',
         'tecnologias': 'Bluetooth, 12V Battery',
         'categorias': 'Electronics',
 
@@ -319,5 +357,5 @@ export const trabajos = [
         ],
 
         'estado': 'Completed',
-    }
+    },
 ]

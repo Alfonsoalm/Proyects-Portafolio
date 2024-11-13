@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { icons } from '../data/icons';
-import { ListadoTrabajos } from "./ListadoTrabajos";
+import { ListadoTrabajos } from "./ProjectsList";
 import {Stars} from "./Stars"; // Asegúrate de importar el componente Stars
 
 export const Inicio = () => {

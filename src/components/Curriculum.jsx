@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useLocation } from 'react-router-dom';
-import { sections } from '../data/secciones';
+import { sections } from '../data/sections';
 
 export const Curriculum = () => {
   const location = useLocation(); 

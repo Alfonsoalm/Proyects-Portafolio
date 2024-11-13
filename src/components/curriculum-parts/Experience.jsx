@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { experiencias } from '../../data/experiencias';
+import { experiencias } from '../../data/experiences';
 
 export const Experiencia = () => {
   const [selectedExperience, setSelectedExperience] = useState(experiencias[0].id);

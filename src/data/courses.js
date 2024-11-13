@@ -128,6 +128,7 @@ export const courses = [
     name: "Solidworks Course",
     institution: "LinkedIn",
     issued: "Ago. 2022",
+    skills: ["Solidworks"],
     image: "logo_linkedin.png",
   },
   {
@@ -163,19 +164,15 @@ export const courses = [
     name: "AutoCAD 2022 esencial",
     institution: "LinkedIn",
     issued: "Abr. 2022",
+    skills: ["AutoCAD"],
     image: "logo_linkedin.png",
   },
   {
     name: "Essential Python",
     institution: "LinkedIn",
     issued: "Abr. 2022",
+    skills: ["Python"],
     image: "logo_linkedin.png",
-  },
-  {
-    name: "eCAMPUS KNX, ETS5 basic Course",
-    institution: "KNX España",
-    issued: "Abr. 2022",
-    image: "",
   },
   {
     name: "Certificate B1 Level",
