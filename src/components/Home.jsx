@@ -1,45 +1,45 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { icons } from '../data/icons';
+import { icons } from "../data/icons";
 import { ListadoTrabajos } from "./ProjectsList";
-import {Stars} from "./Stars"; // Asegúrate de importar el componente Stars
+import { Stars } from "./Stars"; // Make sure to import Stars component
 
 export const Inicio = () => {
-  const location = useLocation(); // Obtener la ubicación actual
+  const location = useLocation(); // Get the current location
 
-  // Efecto para mover el scroll al inicio cuando la ubicación cambia
+  // Effect to scroll to the top when the location changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  // Sort icons by rating in descending order and select top 6
+  const sortedIcons = [...icons].sort((a, b) => b.valoracion - a.valoracion);
+  const topRatedIcons = sortedIcons.slice(0, 6);
+
   return (
-    <div className="page">
-      <h1 className='heading'>Home </h1>
-      <p className="heading-explain">Some technologies I worked with</p>
-      <hr />
-
-      <section className='tech-grid'>
-      {
-        icons.map(icon => {
-          return (
-            <div key={icon.nombre} className='tech-item'>
-              <Link to={`/project/${icon.nombre}`} className='tech-item-a'>
-                <div>
-                  <img src={"/images/icons/"+icon.imagen} alt={icon.nombre} />
-                </div>
-                <div>
-                  <p>{icon.nombre}</p>
-                  <Stars rating={icon.valoracion} />  {/* Añade la valoración en estrellas aquí */}
-                </div>
-              </Link>
-            </div>
-          );
-        })
-      }
-      </section>
-
-      <hr />
-      <p className="guide-explain">
-        Let me guide you through my project portfolio and my professional experience in engineering.
+    <div className="home-page">
+      <h1>
+        Hi, My name is <span>Alfonso</span>
+      </h1>
+      <h2 className="text-animation">
+        I'm <span></span>
+      </h2>
+      <p>
+        I am an electronic engineer from Cordoba, Spain, with a deep passion for{" "}
+        <strong>technology</strong> and an unwavering drive to embrace{" "}
+        <em>new challenges</em>. My goal is to <em>learn and grow</em> every
+        day, collaborating on diverse projects and seizing opportunities to make
+        a meaningful impact. I find immense joy in developing both{" "}
+        <strong>software</strong> and <strong>hardware</strong> solutions,
+        bringing ideas to life through creativity and technical skill. As a{" "}
+        <strong>self-taught</strong> and <em>curious</em> individual, I thrive
+        on exploration, as evidenced by this very portfolio. From an early age,
+        my insatiable curiosity about the world led me to seek answers, and{" "}
+        <strong>engineering</strong> became the key to unlocking those
+        mysteries. Over time, I have expanded my expertise across a variety of
+        domains, from <strong>3D printing</strong> and the{" "}
+        <em>Internet of Things (IoT)</em> to <em>computer science</em>,
+        continually pushing boundaries and embracing innovation.
       </p>
 
       <div className="div_link">
@@ -47,10 +47,41 @@ export const Inicio = () => {
           Contact me
         </Link>
       </div>
-      <br/>
+
+      <hr />
+      <p className="heading-explain">Some technologies I worked with</p>
+
+      <section className="tech-grid">
+        {topRatedIcons.map((icon) => (
+          <div key={icon.nombre} className="tech-item">
+            <Link to={`/project/${icon.nombre}`} className="tech-item-a">
+              <div>
+                <img src={"/images/icons/" + icon.imagen} alt={icon.nombre} />
+              </div>
+              <div>
+                <p>{icon.nombre}</p>
+                <Stars rating={icon.valoracion} /> {/* Display star ratings */}
+              </div>
+            </Link>
+          </div>
+        ))}
+      </section>
+
+      <div className="div_link">
+        <Link className="link" to="/all-icons">
+          See All Technologies
+        </Link>
+      </div>
+      <hr />
 
       <section className="lasts-works">
         <h2 className="heading">Some projects developed</h2>
+
+        <p className="guide-explain">
+          Let me guide you through my project portfolio and my professional
+          experience in engineering.
+        </p>
+
         <ListadoTrabajos limite="2" />
 
         <div className="div_link">
@@ -58,6 +89,7 @@ export const Inicio = () => {
             See More Projects
           </Link>
         </div>
+        <br />
       </section>
     </div>
   );

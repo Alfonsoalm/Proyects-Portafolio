@@ -11,7 +11,6 @@ import './styles/projectView.css';
 import './styles/proyect.css';
 import './styles/aboutMe.css';
 import './styles/experience.css';
-import './styles/socialNetwork.css';
 import './styles/education.css';
 import './styles/skillList.css';
 import './styles/recognitions.css';

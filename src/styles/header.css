@@ -4,10 +4,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 45px;
-  background-color: #1f1a65;
+  max-width: 1750px;
+  background-color: rgba(15, 10, 76, 0.8);
   color: white;
-  border-radius: 0px;
-  margin: 0px -6px 0px -6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps header above other content */
+  height: auto; /* Or set a fixed height if needed, like height: 80px; */
+}
+
+.content {
+margin-top: 142px;
+  padding: 0; /* Optional: Adjust padding as needed */
 }
 
 .header .logo h3 {

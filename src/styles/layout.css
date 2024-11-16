@@ -5,12 +5,16 @@ body {
   height: 100%;
   margin: 0;
   font-family: Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
 }
 
 /* Asegura que #root ocupe toda la altura */
 #root {
-  background-image: url("../../public/images/background-image.jpg");
+  background-image: linear-gradient(
+    to bottom, 
+    rgba(255, 255, 255, 1), /* Fully white at the top */
+    rgba(255, 255, 255, 0.5), /* Partially transparent */
+    rgba(255, 255, 255, 0.1) /* Almost fully transparent at the bottom */
+  ), url("../../public/images/background-image.jpg");
   background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-position: center;
   background-repeat: repeat; /* Repite la imagen para cubrir el área */
@@ -18,6 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centramos horizontalmente el contenido de root */
+  
+  --bg-color: rgba(255, 255, 255);
+  --second-bg-color: rgba(255, 255, 255, 0.9);
+  --text-color: rgba(255, 255, 255, 0.9);
+  --text-color-hover: rgb(0, 0, 0);
+  --main-color: rgb(27, 25, 117);
 }
 
 .layout {

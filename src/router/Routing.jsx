@@ -14,8 +14,8 @@ import { Experiencia } from '../components/curriculum-parts/Experience';
 import { Educacion } from '../components/curriculum-parts/Education';
 import { Reconocimientos } from '../components/curriculum-parts/Recognitions';
 import { ProjectView } from '../components/ProjectView';
-import { RedesSociales } from '../components/SocialNetworks';
 import { Courses } from '../components/curriculum-parts/Courses';
+import { TechnoPage } from '../components/TechnoPage';
 
 export const MisRutas = () => {
   return (
@@ -39,7 +39,7 @@ export const MisRutas = () => {
                 <Route path='/contacto' element={<Contacto/>}/>
                 <Route path='/proyecto/:id' element={<Proyecto/>}/>
                 <Route path='/project/:techName' element={<ProjectView />} /> {/* Ruta dinámica para la vista del proyecto */}
-                <Route path='/redes_sociales' element={<RedesSociales />} /> {/* Ruta dinámica para la vista del proyecto */}
+                <Route path='/tecnologies' element={<TechnoPage />} /> {/* New route for all icons */}
                 <Route path='*' element={<Error/>}/>
             </Routes>
         </section>

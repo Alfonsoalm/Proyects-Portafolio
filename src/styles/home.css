@@ -1,9 +1,109 @@
 
-.heading-explain {
-  font-size: 22px;
-  color: #000;
-  margin-left: 10px;
+.home-page{
+  margin-left: 30px;
+  margin-right: 30px;
+
 }
+
+.home-page h1{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 4.5rem;
+}
+
+.home-page p{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+}
+
+.home-page span{
+  color: var(--main-color);
+}
+
+hr{
+ color: rgba(255,255,255,0.3);
+}
+
+/* Animacion Alberto */
+.text-animation{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.text-animation span{
+  position: relative;
+}
+
+.text-animation span::before{
+  content: "Electronic Engineer";
+  color: var(--main-color);
+  animation: words 17s infinite;
+}
+
+.text-animation span::after{
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 21s steps(14) infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 2px solid var(--main-color);
+  }
+}
+
+@keyframes words{
+  0%, 25%{
+    content: "Electronic Engineer";
+  }
+  26%, 50%{
+    content: "R & D Engineer";
+  }
+  51%, 75%{
+    content: "Software Developer";
+  }
+  76%, 100%{
+    content: "Hardware Designer";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%{
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85%{
+    width: calc(100% + 8px);
+  }
+}
+
+
+
 
 /* Contenedor de las tarjetas */
 .tech-grid {
@@ -93,6 +193,7 @@
     font-size: 18px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-bottom: 20px;
   }
   
   .link:hover {
