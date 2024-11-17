@@ -37,28 +37,28 @@ body {
 .layout {
   background-color: var(--white-trans-color);
   flex: 1;
-  width: 100%;
-  max-width: 1200px;
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura del viewport */
+  width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Cambiar de 'center' a 'space-between' */
+  justify-content: center;
   padding: 0;
   border-radius: 10px;
   box-shadow: 0px 4px 10px var(--box-shadow-color);
   margin: 0 auto;
-  min-height: 100vh; /* Mantiene el layout al menos del tamaño de la ventana */
 }
 
 /* Ajustar el contenedor de contenido para centrar verticalmente */
 .content {
-  flex: 1; /* Hacer que el contenido crezca */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-grow: 1;
+  justify-content: center; /* Centra el formulario verticalmente */
   align-items: center;
-  padding: 20px;
-  margin: 0 auto;
-  width: 100%;
+  padding: 20px; 
+  margin: 0 auto; /* Centrar el contenido */
+  height: 100%; 
+  margin-top: 130px;
 }
 
 .page {
@@ -308,7 +308,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0; /* Eliminar el margin-top que pueda crear espacio en blanco */
+  margin-top: auto;
 }
 
 .footer .link-icons {
@@ -427,14 +427,8 @@ hr {
   }
 
   .footer {
-    width: 100%;
-    padding: 40px 0;
-    background-color: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0; /* Eliminar el margin-top que pueda crear espacio en blanco */
+    margin-top: 20px;
+    padding: 20px 10px;
   }
 
   .footer .link-icons {
