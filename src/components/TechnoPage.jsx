@@ -7,6 +7,7 @@ export const TechnoPage = () => {
   return (
     <div className="page">
       <h1 className="heading">All Technologies I Worked With</h1>
+      <hr />
       <section className='tech-grid'>
         {icons.map(icon => (
           <div key={icon.nombre} className='tech-item'>

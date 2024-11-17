@@ -1,38 +1,38 @@
 /* HEADER */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 25px 45px;
-  max-width: 1750px;
+  width: 1200px;
+  margin: 0 auto;   
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* padding-left: 20px; */
   background-color: rgba(15, 10, 76, 0.8);
   color: white;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Keeps header above other content */
-  height: auto; /* Or set a fixed height if needed, like height: 80px; */
 }
 
 .content {
-margin-top: 142px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 142px;
   padding: 0; /* Optional: Adjust padding as needed */
 }
 
 .header .logo h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .header nav ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   list-style: none;
 }
 
 .header nav ul li {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .header nav ul li a {
@@ -52,7 +52,6 @@ margin-top: 142px;
   .header {
       flex-direction: column;
       align-items: center;
-      padding: 5px 30px;
   }
 
   .header .logo {
@@ -70,8 +69,8 @@ margin-top: 142px;
   }
 
   .header nav ul li {
-      margin: 4px 0;
-      font-size: 23px;
+      margin: 2px 0;
+      font-size: 18px;
   }
 
   .header .logo h3 {
@@ -79,20 +78,25 @@ margin-top: 142px;
   }
 }
 
-/* Media query para tablets (menú en formato horizontal) */
+/* Media query para tablets (menú en formato horizontal en dos filas) */
 @media (min-width: 800px) and (max-width: 1024px) {
-  .header {
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
   .header nav ul {
-      flex-direction: row;
-      justify-content: center;
-      gap: 15px;
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap into the next line */
+      gap: 10px;
+      justify-content: center; /* Center all elements */
+      padding: 0;
+      width: 100%; /* Ensure the nav takes the full available width */
   }
 
   .header nav ul li {
-      font-size: 23px;
+      flex: 1 1 45%; /* Each list item takes roughly half the width */
+      text-align: center;
+  }
+
+  /* If there are 5 items, ensure the last one is centered */
+  .header nav ul li:nth-child(5) {
+      flex-basis: 100%; /* Forces the fifth item to occupy full width */
+      text-align: center;
   }
 }

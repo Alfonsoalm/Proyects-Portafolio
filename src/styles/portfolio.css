@@ -63,7 +63,7 @@
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 899px) {
   .works {
       flex-direction: column;
       gap: 10px;
@@ -72,5 +72,30 @@
   .work-item {
       flex-basis: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
       max-width: 100%;
+  }
+}
+
+/* Media query for tablet layout with two columns for works */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .works {
+      display: flex;
+      flex-wrap: wrap; /* Allows items to wrap to the next line */
+      gap: 15px; /* Adjust the gap as needed */
+      justify-content: space-between; /* Centers and distributes items evenly */
+  }
+
+  .work-item {
+      flex-basis: 48%;
+      max-width: 48%;
+      box-sizing: border-box;
+      height: auto; /* Allows height to adapt to content */
+      padding: 5px; /* Optional padding to give space inside the item */
+  }
+
+  /* Ensure content within the work items doesn't overflow */
+  .work-item p, .work-item h1, .work-item h2, .work-item h3 {
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Optional */
   }
 }

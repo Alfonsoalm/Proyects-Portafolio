@@ -33,8 +33,7 @@ body {
 .layout {
   background-color: rgba(255, 255, 255, 0.9); /* Fondo sólido con opacidad */
   flex: 1;
-  width: 100%; /* Asegura que el layout ocupe todo el ancho de root */
-  max-width: 1200px;
+  width: 1200px; /* Asegura que el layout ocupe todo el ancho de root */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

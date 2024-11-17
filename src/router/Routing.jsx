@@ -5,7 +5,6 @@ import { Portafolio } from '../components/Portfolio';
 import { AboutMe } from '../components/AboutMe';
 import { Curriculum } from '../components/Curriculum';
 import { Contacto } from '../components/Contact';
-import { HeaderNav } from '../layout/HeaderNav';
 import { Footer } from '../layout/Footer';
 import { Error } from '../components/Error';
 import { Proyecto } from '../components/Project';
@@ -16,16 +15,15 @@ import { Reconocimientos } from '../components/curriculum-parts/Recognitions';
 import { ProjectView } from '../components/ProjectView';
 import { Courses } from '../components/curriculum-parts/Courses';
 import { TechnoPage } from '../components/TechnoPage';
+import { HeaderNav } from '../layout/HeaderNav';
 
 export const MisRutas = () => {
   return (
-    <BrowserRouter>
-        {/* HEADER Y NAVEGACION */}
-        <HeaderNav />
-
-        {/* CONTENIDO CENTRAL */}
+    <BrowserRouter >
+    <HeaderNav />
+    <div className='layout'>
         <section className="content">
-            <Routes>
+            <Routes >
                 <Route path='/' element={ <Navigate to="/inicio"/>}/>
                 <Route path='/inicio' element={<Inicio/>}/>
                 <Route path='/portafolio' element={<Portafolio/>}/>
@@ -43,9 +41,8 @@ export const MisRutas = () => {
                 <Route path='*' element={<Error/>}/>
             </Routes>
         </section>
-
-        {/*FOOTER */}
-        <Footer />
+    </div>
+    <Footer />
     </BrowserRouter>
   )
 }
