@@ -25,8 +25,12 @@ export const Inicio = () => {
         I'm <span className="name"></span>
       </h2>
       <p className="justified-text">
-        I am an electronic engineer from Cordoba, Spain, passionate about technology and driven to face new challenges. I thrive on learning, collaborating on projects, and developing impactful software and hardware solutions. Self-taught and curious, I find joy in bringing ideas to life and expanding my skills in 3D printing, IoT, and computer science. Engineering has always been my way to satisfy my curiosity, and I continually embrace innovation and growth.
-      </p>
+      As an electronic engineer <strong>passionate about technology</strong> and new challenges, 
+      I enjoy learning, <strong>collaborating</strong> on projects, and creating impactful software and hardware solutions. 
+      Being <strong>self-taught and curious</strong>, I bring ideas to life through skills in 3D printing, IoT, and computer science. 
+      Engineering fulfills my curiosity, and I continuously embrace innovation and growth.
+    </p>
+
 
       <div className="div_link">
         <Link className="link" to="/contacto">

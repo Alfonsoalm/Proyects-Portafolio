@@ -37,28 +37,28 @@ body {
 .layout {
   background-color: var(--white-trans-color);
   flex: 1;
-  min-height: 100vh; /* Asegura que ocupe al menos toda la altura del viewport */
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Cambiar de 'center' a 'space-between' */
   padding: 0;
   border-radius: 10px;
   box-shadow: 0px 4px 10px var(--box-shadow-color);
   margin: 0 auto;
+  min-height: 100vh; /* Mantiene el layout al menos del tamaño de la ventana */
 }
 
 /* Ajustar el contenedor de contenido para centrar verticalmente */
 .content {
+  flex: 1; /* Hacer que el contenido crezca */
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: center; /* Centra el formulario verticalmente */
+  justify-content: center;
   align-items: center;
-  padding: 20px; 
-  margin: 0 auto; /* Centrar el contenido */
-  height: 100%; 
-  margin-top: 130px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .page {
@@ -308,7 +308,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
+  margin-top: 0; /* Eliminar el margin-top que pueda crear espacio en blanco */
 }
 
 .footer .link-icons {
@@ -357,7 +357,7 @@ hr {
 /* Mobile styles */
 @media (max-width: 799px) {
   .layout{
-    max-width: 50%;
+    max-width: 30%;
   }
   .home-page, .page {
     margin-left: 10px;
@@ -427,7 +427,14 @@ hr {
   }
 
   .footer {
-    padding: 20px 10px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0; /* Eliminar el margin-top que pueda crear espacio en blanco */
   }
 
   .footer .link-icons {
