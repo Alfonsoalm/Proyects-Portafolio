@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { icons } from "../data/icons";
 import { ListadoTrabajos } from "./ProjectsList";
+import { icons } from "../data/icons";
 import { Stars } from "./Stars"; // Make sure to import Stars component
 
 export const Inicio = () => {
@@ -19,10 +19,10 @@ export const Inicio = () => {
   return (
     <div className="home-page">
       <h1>
-        Hi, My name is <span>Alfonso</span>
+        Hi, My name is <span className="name">Alfonso</span>
       </h1>
       <h2 className="text-animation">
-        I'm <span></span>
+        I'm <span className="name"></span>
       </h2>
       <p>
         I am an electronic engineer from Cordoba, Spain, with a deep passion for{" "}
@@ -68,7 +68,7 @@ export const Inicio = () => {
       </section>
 
       <div className="div_link">
-        <Link className="link" to="/all-icons">
+        <Link className="link" to="/tecnologies">
           See All Technologies
         </Link>
       </div>

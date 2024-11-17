@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import { icons } from '../data/icons';
 import { Stars } from './Stars'; // Make sure to import Stars component
 
 export const TechnoPage = () => {
+  const location = useLocation(); 
+  // Efecto para mover el scroll al inicio cuando la ubicación cambia
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="page">
       <h1 className="heading">All Technologies I Worked With</h1>

@@ -11,6 +11,7 @@
   background-color: rgba(15, 10, 76, 0.8);
   color: white;
   position: fixed;
+  z-index: 1000; /* High value to keep header on top */
 }
 
 .content {
