@@ -33,6 +33,7 @@ export const Contacto = () => {
   return (
     <div className="page">
       <h1 className="heading">Contact</h1>
+      <p >Envio a: alfonsoalm34@gmail.com</p>
       <hr />
       <form ref={form} onSubmit={sendEmail} className="contact">
         <input type="text" name="user_name" placeholder="Name" required />

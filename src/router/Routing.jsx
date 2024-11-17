@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Inicio } from '../components/Home';
 import { Portafolio } from '../components/Portfolio';
-import { AboutMe } from '../components/AboutMe';
 import { Curriculum } from '../components/Curriculum';
 import { Contacto } from '../components/Contact';
 import { Footer } from '../layout/Footer';
@@ -27,7 +26,6 @@ export const MisRutas = () => {
                 <Route path='/' element={ <Navigate to="/inicio"/>}/>
                 <Route path='/inicio' element={<Inicio/>}/>
                 <Route path='/portafolio' element={<Portafolio/>}/>
-                <Route path='/aboutme' element={<AboutMe/>}/>
                 <Route path='/curriculum' element={<Curriculum/>}/>
                 <Route path="/curriculum/experiencia" element={<Experiencia />} />
                 <Route path="/curriculum/conocimientos" element={<Conocimientos />} />

@@ -24,22 +24,8 @@ export const Inicio = () => {
       <h2 className="text-animation">
         I'm <span className="name"></span>
       </h2>
-      <p>
-        I am an electronic engineer from Cordoba, Spain, with a deep passion for{" "}
-        <strong>technology</strong> and an unwavering drive to embrace{" "}
-        <em>new challenges</em>. My goal is to <em>learn and grow</em> every
-        day, collaborating on diverse projects and seizing opportunities to make
-        a meaningful impact. I find immense joy in developing both{" "}
-        <strong>software</strong> and <strong>hardware</strong> solutions,
-        bringing ideas to life through creativity and technical skill. As a{" "}
-        <strong>self-taught</strong> and <em>curious</em> individual, I thrive
-        on exploration, as evidenced by this very portfolio. From an early age,
-        my insatiable curiosity about the world led me to seek answers, and{" "}
-        <strong>engineering</strong> became the key to unlocking those
-        mysteries. Over time, I have expanded my expertise across a variety of
-        domains, from <strong>3D printing</strong> and the{" "}
-        <em>Internet of Things (IoT)</em> to <em>computer science</em>,
-        continually pushing boundaries and embracing innovation.
+      <p className="justified-text">
+        I am an electronic engineer from Cordoba, Spain, passionate about technology and driven to face new challenges. I thrive on learning, collaborating on projects, and developing impactful software and hardware solutions. Self-taught and curious, I find joy in bringing ideas to life and expanding my skills in 3D printing, IoT, and computer science. Engineering has always been my way to satisfy my curiosity, and I continually embrace innovation and growth.
       </p>
 
       <div className="div_link">
