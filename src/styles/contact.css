@@ -5,20 +5,21 @@
   justify-content: center;
   align-items: center;
   max-width: 400px;
-  width: 90%; /* Ajusta el ancho para que sea más responsivo */
-  margin: auto; /* Centrar el formulario horizontalmente */
-  padding: 30px; /* Reducir padding para dispositivos más pequeños */
+  width: 100%; /* Ajusta el ancho para que sea más responsivo */
+  margin: 0 auto;
   border-radius: 10px;
   background-color: #f4f4f4;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* INPUTS Y TEXTAREA DEL FORMULARIO */
 .contact input[type="email"],
 .contact input[type="text"],
 .contact textarea {
-  width: 60%;
+  width: 80%;
   padding: 10px; /* Consistent padding for all inputs and textarea */
   margin: 8px 0;
   font-size: 16px; /* Tamaño de fuente ajustado */
@@ -48,33 +49,4 @@
 
 .contact input[type="submit"]:hover {
   background-color: #1f1a65;
-}
-
-/* MEDIA QUERIES PARA DISPOSITIVOS MÓVILES */
-@media (max-width: 768px) {
-  .contact {
-    padding: 20px;
-    margin-top: calc(var(--header-height) + 20px); /* Evita la superposición con el header */
-    font-size: 16px;
-  }
-
-  .contact input[type="text"],
-  .contact input[type="email"],
-  .contact textarea {
-    padding: 15px;
-    font-size: 16px; /* Tamaño reducido para evitar que ocupe demasiado espacio */
-  }
-
-  .contact input[type="submit"] {
-    font-size: 18px; /* Ajuste de tamaño para mejor visualización */
-    padding: 12px 20px;
-  }
-}
-
-/* MEDIA QUERIES PARA TABLET */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .contact {
-    max-width: 500px; /* Ajustar el tamaño para tablet */
-    padding: 40px; /* Un padding un poco más generoso en tablet */
-  }
 }
