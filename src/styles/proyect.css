@@ -57,10 +57,10 @@
 
 .project-technologies {
   text-align: center; /* Center text */
-  margin: 10px 5px; /* Add margin for spacing */
+  margin: 5px 5px; /* Add margin for spacing */
   color: black;
   font-style: italic;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .project-text {
@@ -160,7 +160,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .project-page {
     padding: 20px 10px;
   }
@@ -176,7 +176,7 @@
   }
 
   .project-technologies {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .project-text,

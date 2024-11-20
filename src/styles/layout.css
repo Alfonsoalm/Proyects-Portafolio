@@ -69,7 +69,7 @@ body {
 }
 
 .page .heading {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: #1f1a65;
   margin-top: 0 auto;
@@ -362,7 +362,7 @@ hr {
 /* Mobile styles */
 @media (max-width: 800px) {
   .layout{
-    max-width: 70%;
+    max-width: 88%;
   }
   .home-page, .page {
     margin-left: 10px;
@@ -402,8 +402,11 @@ hr {
 
   .tech-grid {
     grid-template-columns: repeat(2, 1fr); /* Mostrar dos columnas en pantallas pequeñas */
-    gap: 15px; /* Reduce el espacio entre las tarjetas para que se ajusten mejor en pantallas pequeñas */
-    padding: 15px;
+    gap: 30px; /* Reduce el espacio entre las tarjetas para que se ajusten mejor en pantallas pequeñas */
+  }
+
+  .tech-item {
+    min-width: 100px;
   }
 
   .tech-item p {
@@ -446,7 +449,7 @@ hr {
 /* Tablet styles */
 @media (min-width: 800px) and (max-width: 1024px) {
   .layout{
-    max-width: 70%;
+    max-width: 80%;
   }
 
   .content {
@@ -483,7 +486,7 @@ hr {
   .header nav ul li {
     flex: 1 1 45%;
     text-align: center;
-    width: 100px;
+    width: 140px;
     height: 30px;
   }
 

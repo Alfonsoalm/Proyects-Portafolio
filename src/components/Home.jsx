@@ -29,7 +29,7 @@ export const Inicio = () => {
       I enjoy learning, <strong>collaborating</strong> on projects, and creating impactful software and hardware solutions. 
       Being <strong>self-taught and curious</strong>, I bring ideas to life through skills in 3D printing, IoT, and computer science. 
       Engineering fulfills my curiosity, and I continuously embrace innovation and growth.
-    </p>
+      </p>
 
 
       <div className="div_link">
