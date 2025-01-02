@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 250px; /* Altura mínima para alinear las tarjetas verticalmente */
+  min-height: 250px;
 }
 
 .curriculum-card:hover {

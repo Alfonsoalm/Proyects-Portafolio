@@ -188,7 +188,7 @@
   }
 
   .project-mask {
-    height: 300px; /* Adjust height to auto to accommodate different image ratios */
+    height: 100px; /* Adjust height to auto to accommodate different image ratios */
   }
 
   .project-image {
