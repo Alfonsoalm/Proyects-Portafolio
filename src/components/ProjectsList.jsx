@@ -15,7 +15,7 @@ export const ListadoTrabajos = ({ limite }) => {
   }
 
   return (
-      <section className='works'>
+      <div className='works'>
       {
         trabajos.slice(0, limite).map(trabajo => {
           const porcentaje = calcularPorcentaje(trabajo.estado);
@@ -39,6 +39,6 @@ export const ListadoTrabajos = ({ limite }) => {
           );
         })
       }
-      </section>
+      </div>
   )
 }

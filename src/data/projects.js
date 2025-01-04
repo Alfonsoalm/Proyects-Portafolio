@@ -1,7 +1,7 @@
 export const trabajos = [
     {
-        'id': 'react-app-web-job',
-        'nombre': 'React Web Aplicacion for Job Searching',
+        'id': 'pied_piper',
+        'nombre': 'Pied Piper - React Web Aplicacion for Job Searching',
         'url': 'https://github.com/Alfonsoalm/Pied-Piper-Frontend',
         'tecnologias': 'React, NodeJS, JWT, MongoDB, JS',
         'categorias': 'Programming',
@@ -35,11 +35,11 @@ export const trabajos = [
             ``,
         ],
     
-        'estado': 'In development',
+        'estado': 'Completed',
     },
     {
         'id': `LoRa_Dron`,
-        'nombre': `Drone communicated via LoRa`,
+        'nombre': `LoRa Dron - Drone communicated via LoRa`,
         'url': `https://github.com/Alfonsoalm/LoRaDRON`,
         'tecnologias': `LoRa, Arduino UNO, Arduino/C++, I2C-SPI Protocols`,
         'categorias': `Electronics, Programming, Control`,
@@ -92,6 +92,72 @@ export const trabajos = [
         ],
 
         'estado': 'Almost finished',
+    },
+
+    {
+        'id': `finanzapp`,
+        'nombre': `Finanz App - Easy desktop app to manage finances`,
+        'url': `https://github.com/Alfonsoalm/FinanzApp`,
+        'tecnologias': `React, Electron, Chart.js, XLSX, jsPDF, MySQL`,
+        'categorias': `App Programming`,
+    
+        'descripcion': `This project began with the idea of creating a desktop application to help users manage and project their personal finances. It allows users to track income, expenses, and savings, providing advanced tools for financial analysis and visualization. This has been a significant learning experience as I integrated various technologies to deliver a robust and user-friendly application.`,
+    
+        'objetivos': {
+            'principal': `Develop a desktop app to manage and project personal finances effectively`,
+            'secundarios': [
+                'Enable users to register income and expenses easily',
+                'Provide tools to track and analyze monthly financial data',
+                'Generate savings projections based on user-defined parameters',
+                'Visualize financial trends through dynamic charts',
+                'Export data to Excel and PDF for offline analysis',
+                'Implement future features like financial advice and mobile compatibility'
+            ]
+        },
+    
+        'proceso': `The project started with creating the user interface using React, focusing on an intuitive design. Electron was integrated to convert the application into a desktop app. Chart.js was used to create dynamic financial graphs, and MySQL provided a stable database for data storage. Features like data export to Excel and PDF were implemented using XLSX and jsPDF libraries.`,
+    
+        'esquema': '',
+    
+        'desafios': [
+            `Ensuring smooth integration of React with Electron`,
+            `Building a reliable financial database using MySQL`,
+            `Creating dynamic and interactive charts for financial visualization`,
+            `Handling state management effectively with Context API`,
+            `Optimizing data export functionality for Excel and PDF formats`
+        ],
+    
+        'soluciones': [
+            `Learned to configure Electron to integrate seamlessly with React`,
+            `Designed a normalized database schema in MySQL to handle financial records`,
+            `Mastered Chart.js to create visually appealing and informative charts`,
+            `Utilized Context API for managing application state globally`,
+            `Implemented XLSX and jsPDF libraries for exporting data in professional formats`
+        ],
+    
+        'lecciones aprendidas': 
+        `Improved skills in desktop application development with Electron, data visualization using Chart.js, and database management with MySQL. Gained experience in handling file exports and managing complex application state using React and Context API.`,
+    
+        'imagenes': [
+            `Pied_Pier-Vista_Seleccion_registro.png`,
+            `Pied_Pier-Vista_Registro_empresas.png`,
+            `Pied_Pier-Vista_Registro_Profesionales.png`,
+            `Pied_Pier-Vista_Login.png`,
+            `Pied_Pier-Vista_Principal.png`,
+            `Pied_Pier-Vista_misOfertas.png`,
+            `Pied_Pier-Vista_Perfiles.png`,
+            `Pied_Pier-Vista_Sectores.png`,
+            `Pied_Pier-Seleccion_de_perfil.png`,
+            `Pied_Pier-Filtros_perfiles.png`,
+            `Pied_Pier-Seleccion_de_sector.png`,
+            `Pied_Pier-Filtros.png`,
+            `Pied_Pier-Vista_mensajes.png`,
+            `Pied_Pier-Vista_Buscar.png`,
+            `Pied_Pier-Ajustes_perfil_2.png`,
+            `Pied_Pier-Ajustes_perfil.png`,
+        ],
+    
+        'estado': 'Completed',
     },
 
     {

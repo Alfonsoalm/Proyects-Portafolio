@@ -14,7 +14,7 @@ export const Inicio = () => {
 
   // Sort icons by rating in descending order and select top 6
   const sortedIcons = [...icons].sort((a, b) => b.valoracion - a.valoracion);
-  const topRatedIcons = sortedIcons.slice(0, 6);
+  const topRatedIcons = sortedIcons.slice(0, 8);
 
   return (
     <div className="home-page">
@@ -30,7 +30,6 @@ export const Inicio = () => {
       Being <strong>self-taught and curious</strong>, I bring ideas to life through skills in 3D printing, IoT, and computer science. 
       Engineering fulfills my curiosity, and I continuously embrace innovation and growth.
       </p>
-
 
       <div className="div_link">
         <Link className="link" to="/contacto">
@@ -50,7 +49,7 @@ export const Inicio = () => {
               </div>
               <div>
                 <p>{icon.nombre}</p>
-                <Stars rating={icon.valoracion} /> {/* Display star ratings */}
+                <Stars rating={icon.valoracion} />
               </div>
             </Link>
           </div>

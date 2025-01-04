@@ -58,7 +58,7 @@ body {
   padding: 20px;
   margin: 0 auto; /* Centrar horizontalmente el contenido si es necesario */
   height: 100%;
-  margin-top: 80px;
+  max-width: 1000px;
 }
 
 .page {
@@ -89,7 +89,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
-  margin-top: 4.5rem;
+  margin-top: 1.5rem;
 }
 
 .home-page p {
@@ -392,10 +392,8 @@ hr {
     flex-grow: 1; /* Permite que crezca ocupando todo el espacio vertical */
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-    margin-top: 50px; /* Deja espacio para el header */
+    margin-top: 10px; /* Deja espacio para el header */
     height: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
   }
 
   .page{
