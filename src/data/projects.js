@@ -13,7 +13,7 @@ export const trabajos = [
             'secundarios': [
             ]
         },
-        'proceso': `Programming now`,
+        'proceso': ``,
         
         'esquema': ``,
     
@@ -34,7 +34,7 @@ export const trabajos = [
         'imagenes': [
             ``,
         ],
-    
+
         'estado': 'Completed',
     },
     {
