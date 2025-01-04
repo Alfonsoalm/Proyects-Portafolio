@@ -466,6 +466,16 @@ hr {
     text-align: center; /* Centra el texto dentro de cada celda */
   }
 
+  .justified-container {
+    flex-direction: column; /* Cambia a una disposición vertical */
+    align-items: flex-start;
+  }
+
+  .image-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
 }
 
 /* Tablet styles */
