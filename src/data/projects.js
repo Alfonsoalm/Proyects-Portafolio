@@ -76,7 +76,67 @@ export const trabajos = [
     
         'estado': 'Completed',
     },
+    {
+        'id': 'autopyzon',
+        'nombre': 'AutoPyzon - Desktop Application for File Automation',
+        'url': 'https://github.com/Alfonsoalm/AutoPyzon',
+        'tecnologias': 'React, Electron, Python, PyPDF2, python-docx, FFmpeg, Whisper',
+        'categorias': 'App Programming, File Automation',
+    
+        'descripcion': `AutoPyzon is a desktop application designed to automate repetitive 
+        tasks related to file and document management. It leverages Python's power for automation
+        logic and combines it with React and Electron to deliver a user-friendly interface. 
+        The tool simplifies tasks such as report generation, folder management, PDF manipulation,
+        and more, offering a comprehensive solution for optimizing office workflows.`,
+    
+        'objetivos': {
+            'principal': `Develop a desktop application to automate common file management tasks.`,
+            'secundarios': [
+                `Create a simple and functional interface using Electron and React.`,
+                `Provide specific functionalities for different file types: Word, Excel, PDF, etc.`,
+                `Integrate support for sending and receiving emails.`,
+                `Enable future extension of functionalities through user suggestions.`
+            ]
+        },
+    
+        'proceso': `The development started by designing views for different file types: Word, PDF, etc.
+        Each view was tailored to include at least one operational function, with some views featuring two or three.
+        Excel functionalities are currently under development and will expand the available options.
+        Python logic was integrated with an Electron-based frontend to transform the project into a desktop application.
+        A modular code structure was implemented to simplify future extensions and updates.
+        The system allows seamless handling of diverse file formats through Python libraries such as python-docx and PyPDF2.`,
 
+        'esquema': [
+            `Frontend: Built with React and Electron to create an interactive and functional desktop interface.`,
+            `Backend: Python handles all the automation logic, including working with specific formats (Word, PDF, Excel, etc.).`,
+            `Automation: Libraries such as python-docx, PyPDF2, FFmpeg, and Whisper are used to manage specific tasks 
+            like report generation, PDF handling, and automatic subtitle creation.`
+        ],
+        
+        'desafios': [
+            `Challenges in integrating Python scripts with Electron to build a desktop application.`,
+            `Handling diverse file formats and ensuring compatibility.`,
+            `Dealing with complexities of managing two languages simultaneously (JavaScript for frontend and Python for backend).`
+        ],
+    
+        'soluciones': [
+            `Focused on modular development to manage the Python and JavaScript workflows effectively.`,
+            `Used Electron's APIs to facilitate Python integration.`,
+            `Built reusable components in React to simplify interface development.`,
+            `Relied on established libraries (python-docx, PyPDF2, FFmpeg) to handle file-specific logic.`
+        ],
+    
+        'lecciones aprendidas': [
+            `Gained experience in building desktop applications with Electron.`,
+            `Learned how to manage Python and JavaScript workflows in a single project.`,
+            `Improved skills in integrating various libraries to handle specific file operations.`,
+            `Developed an understanding of creating modular, scalable, and user-friendly interfaces.`
+        ],
+    
+        'imagenes': [],
+
+        'estado': "In development",
+    },
     {
         'id': `LoRa_Dron`,
         'nombre': `LoRa Dron - Drone communicated via LoRa`,
@@ -136,7 +196,7 @@ export const trabajos = [
 
     {
         'id': `finanzapp`,
-        'nombre': `Finanz App - Easy desktop app to manage finances`,
+        'nombre': `FinanzApp - Easy desktop app to manage finances`,
         'url': `https://github.com/Alfonsoalm/FinanzApp`,
         'tecnologias': `React, Electron, Chart.js, XLSX, jsPDF, MySQL`,
         'categorias': `App Programming`,
@@ -155,7 +215,11 @@ export const trabajos = [
             ]
         },
     
-        'proceso': `The project started with creating the user interface using React, focusing on an intuitive design. Electron was integrated to convert the application into a desktop app. Chart.js was used to create dynamic financial graphs, and MySQL provided a stable database for data storage. Features like data export to Excel and PDF were implemented using XLSX and jsPDF libraries.`,
+        'proceso': `The project started with creating the user interface using React,
+        focusing on an intuitive design. Electron was integrated to convert the 
+        application into a desktop app. Chart.js was used to create dynamic financial graphs,
+        and MySQL provided a stable database for data storage. Features like data export to Excel 
+        and PDF were implemented using XLSX and jsPDF libraries.`,
     
         'esquema': '',
     

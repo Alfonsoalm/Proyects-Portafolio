@@ -35,18 +35,6 @@ export const Proyecto = () => {
     // Página inicial
     const [currentPage, setCurrentPage] = useState(0); 
     
-    // Número de imágenes por página
-    const IMAGES_PER_PAGE = 2; 
-
-    // Calcular las imágenes visibles en función de la página actual
-    const visibleImages = proyecto.imagenes?.slice(
-        currentPage * IMAGES_PER_PAGE,
-        (currentPage + 1) * IMAGES_PER_PAGE
-    );
-
-    // Calcular el número total de páginas
-    const totalPages = Math.ceil((proyecto.imagenes?.length || 0) / IMAGES_PER_PAGE);
-
     return (
         <div className="project-page">
             <div className="project-card">
