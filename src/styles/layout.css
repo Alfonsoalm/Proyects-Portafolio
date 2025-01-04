@@ -65,6 +65,7 @@ body {
   margin: 0;
   flex-grow: 1;
   min-height: 100%;
+  min-width: 400px;
 }
 
 .page .heading {
@@ -107,15 +108,32 @@ hr {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Añadir esta clase al archivo CSS */
-.justified-text {
-  text-align: justify; /* Justifica el texto para que esté alineado como un párrafo recto */
-  margin-left: 30px;
-  margin-right: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.8;
+.justified-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Espacio entre texto e imagen */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 20px; /* Espacio inferior */
 }
+
+.justified-text {
+  flex: 1; /* El texto ocupará un espacio proporcional */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.image-container {
+  flex: 1; /* La imagen ocupará un espacio proporcional */
+  text-align: center;
+}
+
+.kicad-image {
+  max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
 
 /* Animación */
 .text-animation {

@@ -24,12 +24,22 @@ export const Inicio = () => {
       <h2 className="text-animation">
         I'm <span className="name"></span>
       </h2>
-      <p className="justified-text">
-      As an electronic engineer <strong>passionate about technology</strong> and new challenges, 
-      I enjoy learning, <strong>collaborating</strong> on projects, and creating impactful software and hardware solutions. 
-      Being <strong>self-taught and curious</strong>, I bring ideas to life through skills in 3D printing, IoT, and computer science. 
-      Engineering fulfills my curiosity, and I continuously embrace innovation and growth.
-      </p>
+      <div className="justified-container">
+        <div className="image-container">
+          <img
+            src="/images/kicad_pcb.png"
+            alt="KiCad PCB Example"
+            className="kicad-image"
+          />
+        </div>
+        <p className="justified-text">
+          As an electronic engineer <strong>passionate about technology</strong> and new challenges, 
+          I enjoy learning, <strong>collaborating</strong> on projects, and creating impactful software and hardware solutions. 
+          Being <strong>self-taught and curious</strong>, I bring ideas to life through skills in 3D printing, IoT, and computer science. 
+          Engineering fulfills my curiosity, and I continuously embrace innovation and growth.
+        </p>
+
+      </div>
 
       <div className="div_link">
         <Link className="link" to="/contacto">
