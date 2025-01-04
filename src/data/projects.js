@@ -1,42 +1,82 @@
 export const trabajos = [
     {
         'id': 'pied_piper',
-        'nombre': 'Pied Piper - React Web Aplicacion for Job Searching',
+        'nombre': 'Pied Piper - React Web Application for Job Searching',
         'url': 'https://github.com/Alfonsoalm/Pied-Piper-Frontend',
         'tecnologias': 'React, NodeJS, JWT, MongoDB, JS',
         'categorias': 'Programming',
-    
-        'descripcion': `This project arose due to the multiple shortcomings that I have been observing on LinkedIn.`,
-    
+        
+        'descripcion': `This project arose due to the multiple shortcomings that I have been observing on LinkedIn. Unlike traditional job search platforms, Pied Piper allows companies to actively search for profiles in the market and make offers based on location, salary preferences, skills, and experience. It also facilitates communication between companies and users, enabling a streamlined hiring process.`,
+        
         'objetivos': {
             'principal': `Build a React Web Application for Job Searching`,
             'secundarios': [
+                `Allow companies to search for professionals based on various criteria`,
+                `Provide professionals with tools to review and evaluate companies`,
+                `Facilitate seamless communication between companies and users through messaging`,
+                `Ensure modularity for potential improvements and database changes in the future`,
+                `Create a secure system for user registration and login`
             ]
         },
-        'proceso': ``,
-        
-        'esquema': ``,
     
+        'proceso': `The development started with the creation of a simple interface using React.
+        Five primary views were implemented: Offer Offers, Sector/Company Search, Profile Search, Messaging, and User Search.
+        A secure login and registration system was implemented for companies and professionals, with password encryption.
+        MongoDB was used as the primary database.
+        Modular code was written to allow for future migration to other databases if needed.
+        Various models were created for professionals, companies, followers, and messages, enabling robust data handling.`,
+            
+        'esquema': [
+            `The application uses a modular MVC (Model-View-Controller) architecture:`,
+            `Frontend: React handles the user interface with reusable components for views and functionality.`,
+            `Backend: NodeJS provides API endpoints for user and company actions.`,
+            `Database: MongoDB stores data for professionals, companies, followers, and messages.`,
+            `Authentication: JWT (JSON Web Token) ensures secure login and session handling.`
+        ],
+        
         'desafios': [
             `Organization of application sections`,
+            `Implementing secure user authentication and data encryption`,
+            `Designing a scalable database schema`,
+            `Ensuring efficient communication between frontend and backend`,
+            `Balancing user experience with advanced functionality`
         ],
     
         'soluciones': [
-            `Development of interfaces, and 
-            functional and non-functional requirements`,
+            `Development of intuitive interfaces with clear separation of sections`,
+            `Integration of JWT for secure authentication and bcrypt for password encryption`,
+            `Creation of a modular and flexible database schema to handle future improvements`,
+            `Utilization of RESTful APIs to ensure seamless communication between React and NodeJS`,
+            `Iterative user feedback to refine user experience and improve functionality`
         ],
     
         'lecciones aprendidas': [
-            `Desarrollo de aplicaciones Web con REACT`,
-            `Trabajar con APIs`,
+            `Advanced React techniques for building modular and scalable web applications`,
+            `Working with APIs for secure and efficient communication between frontend and backend`,
+            `Best practices in database design and authentication`,
+            `Modular coding practices to allow for future scalability and changes`,
+            `Balancing functionality with user experience for professional applications`
         ],
     
         'imagenes': [
-            ``,
+            `Vista_Principal.jpg`,
+            `Vista_Seleccion_registro.png`,
+            `Vista_Registro_empresas.png`,
+            `Vista_Registro_Profesionales.png`,
+            `Vista_Sectores.png`,
+            `Vista_Perfiles.png`,
+            `Vista_Buscar.png`,
+            `Vista_misOfertas.png`,
+            `Vista_mensajes.png`,
+            `Seleccion_de_perfil.png`,
+            `Seleccion_de_sector.png`,
+            `Ajustes_perfil.png`,
+            `Ajustes_perfil_2.png`,
         ],
-
+    
         'estado': 'Completed',
     },
+
     {
         'id': `LoRa_Dron`,
         'nombre': `LoRa Dron - Drone communicated via LoRa`,

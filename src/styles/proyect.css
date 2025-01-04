@@ -70,6 +70,47 @@
   margin: 10px 0px 20px 0px;
 }
 
+.project-images-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-full-width img {
+  width: 60%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para mejorar el diseño */
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.pagination-controls button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #2f2895;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .project-process-title,
 .project-objectives-title{
   font-size: 30px;
@@ -81,6 +122,10 @@
   margin: 0 auto;
 }
 .project-objectives-secondaries{
+  font-size: 20px;
+}
+
+.project-process-list{
   font-size: 20px;
 }
 

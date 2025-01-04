@@ -22,7 +22,12 @@ export const Detalles = ({ id }) => {
             </ul>
 
             <div className="proceso-y-imagenes">
-                <p>{proyecto.proceso}</p>
+                <h2>Proceso</h2>
+                <ul>
+                    {proyecto.proceso.split('. ').map((step, index) => (
+                        <li key={index}>{step}</li>
+                    ))}
+                </ul>
                 <div className="imagenes-proceso">
                     {proyecto.imagenes.map((img, index) => (
                         <img key={index} src={`/images/${img}`} alt={`Imagen de ${proyecto.nombre}`} />
