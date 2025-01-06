@@ -73,7 +73,7 @@ export const Proyecto = () => {
                             <div className="image-full-width">
                                 <img
                                     className="project-image-item"
-                                    src={`/images/proyectos/Pied_Piper/${proyecto.imagenes[currentPage]}`}
+                                    src={`/images/proyectos/${proyecto.id}/${proyecto.imagenes[currentPage]}`}
                                     alt={proyecto.imagenes[currentPage]
                                         .split('/')
                                         .pop()
